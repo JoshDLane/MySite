@@ -1,0 +1,24 @@
+.test {
+    color: rebeccapurple;
+    font-size: 50;
+}
+
+.homeBackground {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(171,221, 196); */
+    /* background-image: url(../../components/assets/homeBackground.svg); */
+    /* background-size: cover; */
+}
+
+.profilepic_container{
+    height: calc(150px + 10vh);
+    width: calc(150px + 10vh);
+    position: absolute;
+    right: 30vw;
+    top: 50vh
+}
+.profilepic {
+    height: 100%;
+    width: 100%;
+}

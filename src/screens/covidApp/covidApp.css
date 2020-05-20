@@ -1,0 +1,42 @@
+.covidTitle {
+    height: 100vh;
+}
+
+.covid_container {
+    width: 100vw;
+    height: 100vh;
+    /* background-color: rgb(171,221, 196);
+    background-size: cover; */
+    border: none;
+    padding: 0px 5vw;
+    margin-top: 15vh;
+}
+
+.screenshot{
+    width: 100%;
+}
+
+.screenshot_container{
+    width: 50%;
+}
+
+.c_line{
+    left: 40vw;
+}
+
+.covid_title_cont{
+    padding: 20px 0px;
+}
+
+.main_title{
+    text-align: center;
+    font-family: BasicSerif;
+
+}
+
+.screenshot_root{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 50vw
+}

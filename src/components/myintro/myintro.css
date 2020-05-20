@@ -1,0 +1,22 @@
+.nameline_container {
+    display: flex;
+    flex-direction: row;
+    width: 500;
+}
+
+.before_name {
+    color: black;
+    font-family: BasicSerif;
+    font-size: 70px;
+}
+.name {
+    color: #f66244;
+    font-family: BasicSerif;
+    font-size: 70px;
+}
+
+.intro_container{
+    position: absolute;
+    left: 15%;
+    top: 35%;
+}
