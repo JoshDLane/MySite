@@ -31,7 +31,7 @@ export default function MyIntro(props) {
                     </div>
                 </div>
                 
-                <DownArrow top={props.top} />
+                <DownArrow show={props.top} title={'Checkout some of my work'}/>
             </div>
 
         </animated.div>

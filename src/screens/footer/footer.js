@@ -12,10 +12,10 @@ const Footer = (props) => {
                 <div onClick={props.onMailClick} className="icon mail">
                     <MailIcon />
                 </div>
-                <a href="https://github.com/JoshDLane" target="_blank" className="icon">
+                <a href="https://github.com/JoshDLane"  className="icon">
                     <GitIcon />
                 </a>
-                <a href="https://linkedin.com/in/josh-lane-4a51a0145" target="_blank"className="icon">
+                <a href="https://linkedin.com/in/josh-lane-4a51a0145" className="icon">
                     <LinkdinIcon />
                 </a>
             </span>

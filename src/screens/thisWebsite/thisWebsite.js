@@ -4,6 +4,7 @@ import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
 import '../../assets/rootstyles.css'
 import CheckoutGit from '../../components/checkoutGit/checkoutGit'
+import DownArrow from '../../components/downarrow/downarrow'
 
 export default function ThisSite() {
     const [ref2, inView] = useInView({
@@ -26,6 +27,7 @@ export default function ThisSite() {
                     <p className="myfont">Really enjoyed using React for the web for the first time and experimenting with different animation tools</p>
                     <CheckoutGit link="https://github.com/JoshDLane/MySite" />
                 </animated.div>
+                <DownArrow show={inView} title={'Checkout some of my work'}/>
             </div>
         </section>
     )

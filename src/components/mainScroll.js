@@ -9,6 +9,8 @@ import "./mainScroll.css"
 import SectionTitle from './sectionTitle/sectionsTitle'
 import Navbar from './navbar/navbar'
 import ContactModal from './contactModal/contactModal'
+import Guitar from '../screens/guitar/guitar'
+
 export default function MainScroll() {
 
     const [atTop, setAtTop] = useState(true)
@@ -47,6 +49,8 @@ export default function MainScroll() {
                     <CovidApp />
                     <SectionTitle title="This Site!" section={"mysite"}/>
                     <ThisWebsite />
+                    <SectionTitle section={"guitar"}/>
+                    <Guitar/>
                 </div>
                 <Footer onMailClick={showContact}/>
             </div>

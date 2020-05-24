@@ -3,10 +3,10 @@ import './downarrow.css'
 
 export default function DownArrow(props) {
     return (
-        <div className={`point_down_container ${props.top ? '' : 'fadeOut'}`}>
+        <div className={`point_down_container ${props.show ? '' : 'fadeOut'}`}>
             <div className="scroll_down_title">
                 <span className="myfont scrolldown">
-                    Checkout some of my work
+                    {props.title}
                     </span>
             </div>
             <div className="arrow_box_root">
