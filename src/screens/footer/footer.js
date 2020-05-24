@@ -1,12 +1,24 @@
 import React from 'react';
+import MailIcon from '../../components/mailIcon'
+import LinkdinIcon from '../../components/linkdinIcon'
+import GitIcon from '../../components/gitIcon'
 import "./footer.css"
-const Footer = () => {
-    function test() {
-        console.log('hi')
-    }
+
+const Footer = (props) => {
+
     return (
         <section className="footer_container">
-            <button onClick={test}>hi</button>
+            <span className="iconContainer">
+                <div onClick={props.onMailClick} className="icon mail">
+                    <MailIcon />
+                </div>
+                <a href="https://github.com/JoshDLane" target="_blank" className="icon">
+                    <GitIcon />
+                </a>
+                <a href="https://linkedin.com/in/josh-lane-4a51a0145" target="_blank"className="icon">
+                    <LinkdinIcon />
+                </a>
+            </span>
         </section>
     );
 };

@@ -1,13 +1,39 @@
 import React from 'react'
+import { useSpring, animated, config } from 'react-spring'
 import './myintro.css'
+import { bounce } from 'react-animations'
+import styled, { keyframes } from 'styled-components'
+import DownArrow from '../downarrow/downarrow'
 
-export default function MyIntro() {
+export default function MyIntro(props) {
+
+    const Bounce = styled.div`animation: 2s ${keyframes`${bounce}`} `
+
+    const opacitySpring = useSpring({
+        from: { opacity: 0 },
+        opacity: 1,
+        delay: 3000,
+        config: { mass: 1, tension: 100, friction: 120 }
+    })
+
     return (
-        <div className="intro_container">
-            <div className="nameline_container">
-                <span className="before_name"> Hi, I'm </span>
-                <span className="name">&nbsp;Josh Lane </span>
+        <animated.div style={opacitySpring}>
+            {/* <Bounce>
+                <div className="profilepic_container">
+                    <img src= {require("../../assets/test_face.png")} alt="portrait" className="profilepic"/>
+                </div>
+            </Bounce> */}
+            <div className="home_intro_root">
+                <div className="intro_container">
+                    <div className="nameline_container">
+                        <span className="before_name myfont"> Hi, I'm </span>
+                        <span className="name myfont">&nbsp;Josh Lane </span>
+                    </div>
+                </div>
+                
+                <DownArrow top={props.top} />
             </div>
-        </div>
+
+        </animated.div>
     )
 }

@@ -11,17 +11,14 @@ function useOnScreen(options) {
     useEffect(() => {
         const observer = new IntersectionObserver(([entry]) => {
             setShowScreenshots(entry.isIntersecting);
-            console.log('entries', entry)
         }, options);
 
         if (picref.current) {
             observer.observe(picref.current)
-            console.log('here')
         }
 
         return () => {
             if (picref.current) {
-                console.log('here')
                 observer.unobserve(picref.current)
             }
         }

@@ -1,0 +1,10 @@
+
+
+.icon{
+    transition-duration: 300ms;
+    fill: black;
+}
+
+.icon:hover {
+    fill: red
+}

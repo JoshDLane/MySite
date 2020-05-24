@@ -1,46 +1,49 @@
-import React, { useEffect, useState, useRef } from 'react';
+import React, { useEffect, useRef } from 'react';
 import './covidApp.css'
+import '../../assets/rootstyles.css'
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
-
+import CheckoutGit from '../../components/checkoutGit/checkoutGit'
+import SectionTitle from '../../components/sectionTitle/sectionsTitle'
 
 const CovidApp = (props) => {
-    const [ref, inView] = useInView({
-        rootMargin: '-200px 0px',
-    })
-    const [refTitle, titleInView] = useInView({
-        rootMargin: '-100px 0px',
-    })
 
+    const [ref, inView ] = useInView({
+        rootMargin: '-125px 0px -200px 0px',
+    })
+ 
     const screenshotSprings = useSpring({
         transform: inView ? 'translate3d(0vw,0,0)' : 'translate3d(-10vw,0,0)',
         opacity: inView ? 1 : 0
+
     })
 
     const opacitySpring = useSpring({
-        opacity: titleInView ? 1 : 0
+        opacity: inView ? 1 : 0
     })
-
     return (
-        <section className="covid_container">
-            <div className="covid_title_cont">
-                <animated.div ref={refTitle} style={opacitySpring}>
-                    <h2 className="main_title">
-                        A Mobile Dashboard Using React Native and D3
-                    </h2>
-                </animated.div>
-
-            </div>
-            <div className="screenshot_root">
-                <animated.div ref={ref} style={screenshotSprings} className="screenshot_container c_home animate" id="animate">
-                    <img src={require("../../assets/covidScreenshotHome.png")} className="screenshot" />
-                </animated.div>
-                <animated.div ref={ref} style={screenshotSprings} className="screenshot_container c_line animate" id="animate">
-                    <img src={require("../../assets/covidScreenshotLineG.png")} className="screenshot" />
-                </animated.div>
-            </div>
+            <section className="section_content">
+                <div className="segment_row covid_cont">
+                    <div className="page_left">
+                        <animated.div ref={ref} style={screenshotSprings} className="screenshot_root">
+                            <div className="screenshot_container c_home" id="animate">
+                                <img src={require("../../assets/img/covidScreenshotHome.png")} className="screenshot" />
+                            </div>
+                            <div className="screenshot_container c_line" id="animate">
+                                <img src={require("../../assets/img/covidScreenshotLineG.png")} className="screenshot" />
+                            </div>
+                        </animated.div>
+                    </div>
+                    <animated.div class="page_right" style={opacitySpring}>
+                        <p className="myfont">Integrated an API offered by the New York State Department of Health to provide 
+                            <span className="emphasized"> up to date, reliable, testing data on the county level</span> </p>
+                        <p className="myfont">Utilized D3 to geomap the data and create an interactive line chart to view the data over time</p>
+                        <CheckoutGit link="https://github.com/JoshDLane/NYSCovidTesting"/>
+                    </animated.div>
+                </div>
         </section>
+
     );
-};
+};  
 
 export default CovidApp;

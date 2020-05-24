@@ -1,0 +1,28 @@
+.thisSite_container {
+    width: 100vw;
+    height: 80vh;
+    /* background-color: rgb(171,221, 196);
+    background-size: cover; */
+    border: none;
+    padding: 0 5vw;
+}
+
+.thisSite_title{
+        text-align: center;
+        font-family: BasicSerif;
+}
+
+
+.siteImage_container{
+    width: 100%;
+}
+
+.siteImage{
+    width: 100%;
+}
+
+
+.gitTxt{
+    text-align: center;
+    font-size: 20px;
+}

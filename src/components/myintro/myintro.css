@@ -6,12 +6,10 @@
 
 .before_name {
     color: black;
-    font-family: BasicSerif;
     font-size: 70px;
 }
 .name {
-    color: #f66244;
-    font-family: BasicSerif;
+    color: #fed42e;
     font-size: 70px;
 }
 

@@ -1,0 +1,17 @@
+.github_img_container{
+    width: 20%;
+    padding: 2%;
+}
+.gibhub_img{
+    height: 100%;
+}
+
+.checkout_git_root{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.gitTxt {
+    font-size: 30px;
+}
