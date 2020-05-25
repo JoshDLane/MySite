@@ -40,6 +40,18 @@
 
 }
 
+@media (max-width: 1024px) {
+    .segment_row {
+        flex-direction: column;
+    }
+    .page_right{
+        width: 100%;
+    }
+    .page_left{
+        width: 100%;
+    }
+  }
+
 .section_content{
     width: "100%";
 }
