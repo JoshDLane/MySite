@@ -49,8 +49,8 @@ export default function MainScroll() {
                     <CovidApp />
                     <SectionTitle title="This Site!" section={"mysite"}/>
                     <ThisWebsite />
-                    <SectionTitle section={"guitar"}/>
-                    <Guitar/>
+                    {/* <SectionTitle section={"guitar"}/>
+                    <Guitar/> */}
                 </div>
                 <Footer onMailClick={showContact}/>
             </div>
