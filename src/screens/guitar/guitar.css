@@ -1,7 +1,9 @@
 .guitar_image_container{
-    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
 }
 
 .guitar_image{
-    width: 100%;
+    height: 100%;
 }

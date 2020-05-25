@@ -15,9 +15,8 @@ const Guitar = () => {
             return (
                 <section className='section_content'>
                     <div className='segment_row guitar_background'>
-                        <animated.div ref={ref2} style={opacitySpring} className="page_left
-                        ">
-                            <div className="guitar_image_container" >
+                        <animated.div ref={ref2} style={opacitySpring} className="page_left">
+                            <div className="guitar_image_container">
                                 <img src={require("../../assets/img/guitar_pic.jpeg")} className="guitar_image" />
                             </div>
                         </animated.div>

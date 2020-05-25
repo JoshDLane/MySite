@@ -1,5 +1,5 @@
 import React from 'react'
-import { useSpring, animated, config } from 'react-spring'
+import { useSpring, animated } from 'react-spring'
 import './myintro.css'
 import { bounce } from 'react-animations'
 import styled, { keyframes } from 'styled-components'

@@ -1,10 +1,9 @@
-import React, { useEffect, useRef } from 'react';
+import React from 'react';
 import './covidApp.css'
 import '../../assets/rootstyles.css'
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
 import CheckoutGit from '../../components/checkoutGit/checkoutGit'
-import SectionTitle from '../../components/sectionTitle/sectionsTitle'
 
 const CovidApp = (props) => {
 

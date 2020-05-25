@@ -1,38 +1,19 @@
-import React, { useEffect, useState } from 'react';
-import { useTransition, animated, config } from 'react-spring'
+import React, { useState } from 'react';
+import { useTransition, config } from 'react-spring'
 import './toolIcons.css'
 
 export default function ToolIcons(props) {
     const [items, set] = useState([])
     // const [index, setIndex] = useState(0)
-    const tool_options = [
-        { key: 'react', image: "../../assets/img/React_logo.png" },
-        { key: 'react_native', image: "../../assets/img/React_logo.png" },
-        { key: 'd3', image: "../../assets/img/d3_logo.png" },
-        { key: 'netlify', image: "../../assets/img/netlify_logo.png" },
-        { key: 'css', image: "../../assets/img/css_logo.png" }]
+    // const tool_options = [
+    //     { key: 'react', image: "../../assets/img/React_logo.png" },
+    //     { key: 'react_native', image: "../../assets/img/React_logo.png" },
+    //     { key: 'd3', image: "../../assets/img/d3_logo.png" },
+    //     { key: 'netlify', image: "../../assets/img/netlify_logo.png" },
+    //     { key: 'css', image: "../../assets/img/css_logo.png" }]
 
+    // const tools = ['react', 'react_native', 'd3']
 
-    // function setIcons() {
-    // if (props.show) {
-    //     var list = tool_options.map(function (tool) { return tool.key})
-    //     var finalList = tool_options.filter(tool => props.tools.includes(tool.key));
-    //     console.log(finalList)
-
-    //     set(finalList)
-    //     // set(tool_options.map(function (tool) { return tool.key}).filter(function(tool) { return props.tools.includes(tool)}))
-    // }else{
-    //     set([])
-    // }
-    // set([{ key: 'react', image: "../../assets/img/React_logo.png" }, { key: 'react_native', image: "../../assets/img/React_logo.png" }, { key: 'd3', image: "../../assets/img/React_logo.png" }])
-    // }
-
-    const tools = ['react', 'react_native', 'd3']
-
-    // useEffect(() => {
-    //     setIcons()
-    //     // void setInterval(() => setIndex(state => (state + 1) % tools.length), 2000)
-    // }, [props.show])
 
     const transitions = useTransition(items, item => item.key, {
         from: { transform: 'translate3d(0,50px,0)', opacity: 0 },
@@ -77,37 +58,3 @@ export default function ToolIcons(props) {
         return null
     }
 }
-    // if (props.sections==="covid") {
-    //     return (
-    //         <div className={`tools ${props.show ? `tools_root` : 'leave'}`}>
-    //             {/* {items.map(item =>
-    //                 <img src={require(`${item.image}`)} ></img>
-    //             )} */}
-    //                     <img src={require("../../assets/img/react_native_logo.png")} ></img>
-    //                     <img src={require("../../assets/img/d3_logo.png")}></img>
-    //                     <img src={require("../../assets/img/javascript_logo.png")}></img>
-    //         </div>
-    //         )
-    // }else if (props.sections==="mysite"){
-
-    //     return <div className={`tools ${props.show ? `tools_root` : 'leave'}`}>
-    //     {/* {items.map(item =>
-    //         <img src={require(`${item.image}`)} ></img>
-    //     )} */}
-    //             <img src={require("../../assets/img/React_logo.png")} ></img>
-    //             <img src={require("../../assets/img/css_logo.png")}></img>
-    //             <img src={require("../../assets/img/javascript_logo.png")}></img>
-    //             <img src={require("../../assets/img/netlify_logo.png")}></img>
-    // </div>
-    // }
-    // else{
-    //     return <div className={`tools ${props.show ? `tools_root` : 'leave'}`}>
-    //     {/* {items.map(item =>
-    //         <img src={require(`${item.image}`)} ></img>
-    //     )} */}
-    //             <img src={require("../../assets/img/react_native_logo.png")} ></img>
-    //             <img src={require("../../assets/img/d3_logo.png")}></img>
-    //             <img src={require("../../assets/img/javascript_logo.png")}></img>
-    // </div>
-    // }
-
