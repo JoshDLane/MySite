@@ -6,10 +6,12 @@
 
 .before_name {
     color: black;
-    font-size: calc(5vw);
 }
 .name {
     color: #fed42e;
+    /* color: #f95f3c;  */
+}
+.name_size{
     font-size: calc(5vw);
 }
 
@@ -18,3 +20,11 @@
     left: 15%;
     top: 35%;
 }
+
+
+@media (max-width: 1024px) {
+    .name_size{
+        font-size: calc(7vw);
+    }
+}
+

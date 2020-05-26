@@ -32,25 +32,27 @@
     justify-content: space-around;
 }
 
-
 .segment_row{
     margin: 0 0;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    padding: 3% 0;
+    padding: 30px 0;
     height: 65vh;
 }
 
 @media (max-width: 1024px) {
     .segment_row {
         flex-direction: column;
+        height: auto;
     }
     .page_right{
         width: 100%;
+        margin: 15px 0;
     }
     .page_left{
         width: 100%;
+        margin: 15px 0;
     }
   }
 

@@ -5,6 +5,7 @@
 }
 .scrolldown{
     font-size: calc(2vw);
+    text-align: center;
 }
 
 .arrow_box span{
@@ -62,4 +63,10 @@
 }
 .scroll_down_title{
     margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+    .scrolldown{
+        font-size: calc(5vw);
+    }
 }

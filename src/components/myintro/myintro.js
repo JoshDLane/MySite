@@ -26,8 +26,8 @@ export default function MyIntro(props) {
             <div className="home_intro_root">
                 <div className="intro_container">
                     <div className="nameline_container">
-                        <span className="before_name myfont"> Hi, I'm </span>
-                        <span className="name myfont">&nbsp;Josh Lane </span>
+                        <span className="before_name myfont name_size"> Hi, I'm </span>
+                        <span className="name myfont name_size">&nbsp;Josh</span>
                     </div>
                 </div>
                 

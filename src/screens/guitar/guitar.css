@@ -7,3 +7,9 @@
 .guitar_image{
     height: 100%;
 }
+
+@media (max-width: 1024px) {
+    .guitar_image{
+        width: 100%;
+    }
+}
