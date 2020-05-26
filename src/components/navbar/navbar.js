@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react'
 import { Transition, config } from 'react-spring/renderprops'
 import './navbar.css'
+import MyLogo from '../../assets/img/myLogo'
 
 export default function Navbar(props) {
     const [atTop, setatTop] = useState(true)
@@ -15,9 +16,9 @@ export default function Navbar(props) {
     }, [props.top])
     
     const myContext = <nav className='nav_container'>
-        {/* <div className="link_container">
-            <Link to='/' className="nav_link">HOME</Link>
-        </div> */}
+        <div className="logo_container include">
+            <MyLogo/>
+        </div>
         <div className="link_container">
             <div className="nav_link" onClick={props.onClick}>CONTACT</div>
         </div>

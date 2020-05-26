@@ -30,3 +30,14 @@
     font-family: BasicSerif;
     cursor: pointer;
 }
+
+.include_logo{
+    display: none;
+}
+
+
+@media (max-width: 1024px) {
+    .include_logo{
+        display: inline-block;
+    }
+}
