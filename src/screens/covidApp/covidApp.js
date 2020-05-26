@@ -25,8 +25,12 @@ const CovidApp = (props) => {
                 <div className="segment_row covid_cont">
                     <div className="page_left">
                         <animated.div ref={ref} style={screenshotSprings} className="screenshot_root">
+                            <div className="screenshot_container">
                                 <img src={require("../../assets/img/covidScreenshotHome.png")} className="screenshot" />
+                            </div>
+                            <div className="screenshot_container">
                                 <img src={require("../../assets/img/covidScreenshotLineG.png")} className="screenshot" />
+                            </div>
                         </animated.div>
                     </div>
                     <animated.div class="page_right" style={opacitySpring}>
