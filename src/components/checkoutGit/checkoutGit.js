@@ -5,9 +5,9 @@ const CheckoutGit = (props) => {
     return (
         <div className="checkout_git_root">
             <div class="center_column">
-                <span className="myfont gitTxt">Check it out @</span>
+                <span className="myfont gitTxt white">Check it out @</span>
             </div>
-                <a href={props.link} className="github_img_container">
+                <a href={props.link} className="github_img_container" style={{fill: props.color}}>
                         <GitIcon />
                 </a>
             </div>

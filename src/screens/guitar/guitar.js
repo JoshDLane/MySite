@@ -21,7 +21,7 @@ const Guitar = () => {
                             </div>
                         </animated.div>
                         <animated.div class="page_right" style={opacitySpring}>
-                            <p className="myfont">My sophmore year of highschool I recieved a grant to build an electric guitar during the summer. I loved spending most my waking hours on it and these memories drive me to seek projects that continue to push me</p>
+                            <p className="myfont white">My sophmore year of highschool I recieved a grant to build an electric guitar during the summer. I loved spending most my waking hours on it and these memories drive me to seek projects that continue to push me</p>
                         </animated.div>
                     </div>
                 </section>

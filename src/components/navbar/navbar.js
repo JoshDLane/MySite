@@ -1,27 +1,27 @@
 import React, { useState, useEffect } from 'react'
 import { Transition, config } from 'react-spring/renderprops'
 import './navbar.css'
+import '../../assets/rootstyles.css'
 import MyLogo from '../../assets/img/myLogo'
+import NavLinks from '../navlinks/navlinks'
 
 export default function Navbar(props) {
     const [atTop, setatTop] = useState(true)
 
     useEffect(() => {
-        if (props.top===true){
+        if (props.top === true) {
             setatTop(true)
         }
-        else{
+        else {
             setatTop(false)
         }
     }, [props.top])
-    
+
     const myContext = <nav className='nav_container'>
         <div className="logo_container include_logo">
-            <MyLogo/>
+            <MyLogo />
         </div>
-        <div className="link_container">
-            <div className="nav_link" onClick={props.onClick}>CONTACT</div>
-        </div>
+        <NavLinks onContact={props.onClick}/>
     </nav>
     return (
         <React.Fragment>

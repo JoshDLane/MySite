@@ -2,9 +2,9 @@
 
 .icon{
     transition-duration: 300ms;
-    fill: black;
+    fill: inherit;
 }
 
 .icon:hover {
-    fill: red
+    fill: #4ABDAC
 }

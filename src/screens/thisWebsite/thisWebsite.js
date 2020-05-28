@@ -25,7 +25,7 @@ export default function ThisSite() {
                 </animated.div>
                 <animated.div class="page_right" style={opacitySpring}>
                     <p className="myfont white">Really enjoyed using React for the web for the first time and experimenting with different animation tools</p>
-                    <CheckoutGit link="https://github.com/JoshDLane/MySite" />
+                    <CheckoutGit link="https://github.com/JoshDLane/MySite" color="white"/>
                 </animated.div>
                 <DownArrow show={inView} title={'Checkout some of my work'}/>
             </div>

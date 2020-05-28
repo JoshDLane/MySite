@@ -1,0 +1,25 @@
+.nav_link {
+    padding: 5px 5px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-family: BasicSerif;
+    cursor: pointer;
+    transition: .3s;
+    font-size: 15px;
+    text-decoration: none !important;
+}
+
+.nav_link:hover{
+    color: red;
+}
+
+.seperator{
+    padding: 5px 20px 10px 20px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    font-family: BasicSerif;
+    font-size: 25px;
+    cursor: default;
+}

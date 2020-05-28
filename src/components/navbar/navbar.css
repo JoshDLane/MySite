@@ -29,8 +29,12 @@
     align-content: center;
     font-family: BasicSerif;
     cursor: pointer;
+    transition: .3s;
 }
 
+.nav_link:hover{
+    color: red;
+}
 .include_logo{
     display: none;
 }
