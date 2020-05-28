@@ -20,7 +20,7 @@ export default function ThisSite() {
             <div className='segment_row mysite_background'>
                 <animated.div ref={ref2} style={opacitySpring} className="page_left">
                     <div className="siteImage_container" >
-                        <img src={require("../../assets/img/mysitephoto.png")} className="siteImage" />
+                        <img src={require("../../assets/img/testing.png")} className="siteImage" />
                     </div>
                 </animated.div>
                 <animated.div class="page_right" style={opacitySpring}>
