@@ -1,6 +1,4 @@
-.include{
-    display: inline;
-}
+
 
 @media (max-width: 1024px) {
     .include{

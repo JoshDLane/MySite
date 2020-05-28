@@ -40,6 +40,12 @@
     padding: 30px 0;
     height: 65vh;
 }
+.white{
+    color: white;
+}
+.teal{
+    color: #4ABDAC
+}
 
 @media (max-width: 1024px) {
     .segment_row {

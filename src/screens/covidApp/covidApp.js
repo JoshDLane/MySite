@@ -34,9 +34,9 @@ const CovidApp = (props) => {
                         </animated.div>
                     </div>
                     <animated.div class="page_right" style={opacitySpring}>
-                        <p className="myfont">Integrated an API offered by the New York State Department of Health to provide 
-                            <span className="emphasized"> up to date, reliable, testing data on the county level</span> </p>
-                        <p className="myfont">Utilized D3 to geomap the data and create an interactive line chart to view the data over time</p>
+                        <p className="myfont white">Integrated an API offered by the New York State Department of Health to provide 
+                            <span className="emphasized teal"> up to date, reliable, testing data on the county level</span> </p>
+                        <p className="myfont white">Utilized D3 to geomap the data and create an interactive line chart to view the data over time</p>
                         <CheckoutGit link="https://github.com/JoshDLane/NYSCovidTesting"/>
                     </animated.div>
                 </div>
