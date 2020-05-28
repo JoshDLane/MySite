@@ -11,6 +11,9 @@
     opacity: 0;
 }
 
+.tools{
+    margin-bottom: 20px;
+}
 
 
 .tools_root {
@@ -18,7 +21,6 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin-bottom: 20px;
 }
 
 
