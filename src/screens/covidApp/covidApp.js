@@ -46,3 +46,4 @@ const CovidApp = (props) => {
 };  
 
 export default CovidApp;
+
