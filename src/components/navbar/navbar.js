@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Transition, config } from 'react-spring/renderprops'
 import './navbar.css'
 import '../../assets/rootstyles.css'
-import MyLogo from '../../assets/img/myLogo'
+import MyLogo from '../../images/myLogo'
 import NavLinks from '../navlinks/navlinks'
 
 export default function Navbar(props) {

@@ -26,10 +26,10 @@ const CovidApp = (props) => {
                     <div className="page_left">
                         <animated.div ref={ref} style={screenshotSprings} className="screenshot_root">
                             <div className="screenshot_container">
-                                <img src={require("../../assets/img/covidScreenshotHome.png")} className="screenshot" />
+                                <img src={require("../../images/covidScreenshotHome.png")} className="screenshot" />
                             </div>
                             <div className="screenshot_container">
-                                <img src={require("../../assets/img/covidScreenshotLineG.png")} className="screenshot" />
+                                <img src={require("../../images/covidScreenshotLineG.png")} className="screenshot" />
                             </div>
                         </animated.div>
                     </div>

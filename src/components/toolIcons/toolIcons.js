@@ -27,9 +27,9 @@ export default function ToolIcons(props) {
             {/* {items.map(item =>
         <img src={require(`${item.image}`)} ></img>
     )} */}
-            <img src={require("../../assets/img/react_native_logo.png")} ></img>
-            <img src={require("../../assets/img/d3_logo.png")}></img>
-            <img src={require("../../assets/img/javascript_logo.png")}></img>
+            <img src={require("../../images/react_native_logo.png")} ></img>
+            <img src={require("../../images/d3_logo.png")}></img>
+            <img src={require("../../images/javascript_logo.png")}></img>
         </div>
 
         )
@@ -38,10 +38,10 @@ export default function ToolIcons(props) {
             {/* {items.map(item =>
         <img src={require(`${item.image}`)} ></img>
     )} */}
-            <img src={require("../../assets/img/React_logo.png")} ></img>
-            <img src={require("../../assets/img/css_logo.png")}></img>
-            <img src={require("../../assets/img/javascript_logo.png")}></img>
-            <img src={require("../../assets/img/netlify_logo.png")}></img>
+            <img src={require("../../images/React_logo.png")} ></img>
+            <img src={require("../../images/css_logo.png")}></img>
+            <img src={require("../../images/javascript_logo.png")}></img>
+            <img src={require("../../images/netlify_logo.png")}></img>
         </div>
 
         )
@@ -50,7 +50,7 @@ export default function ToolIcons(props) {
             {/* {items.map(item =>
         <img src={require(`${item.image}`)} ></img>
     )} */}
-            <img src={require("../../assets/img/wood.png")} ></img>
+            <img src={require("../../images/wood.png")} ></img>
         </div>
 
         )

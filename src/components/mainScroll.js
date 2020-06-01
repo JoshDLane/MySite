@@ -1,15 +1,15 @@
 import React, { useEffect, useState } from 'react'
-import Home from '../screens/home/home'
-import CovidApp from '../screens/covidApp/covidApp'
-import Contact from '../screens/contact/contact'
-import Footer from '../screens/footer/footer'
-import ThisWebsite from '../screens/thisWebsite/thisWebsite'
+import Home from '../pages/home/home'
+import CovidApp from '../pages/covidApp/covidApp'
+import Contact from '../pages/contact/contact'
+import Footer from '../pages/footer/footer'
+import ThisWebsite from '../pages/thisWebsite/thisWebsite'
 import TopLogo from './topLogo/topLogo'
 import "./mainScroll.css"
 import SectionTitle from './sectionTitle/sectionsTitle'
 import Navbar from './navbar/navbar'
 import ContactModal from './contactModal/contactModal'
-import Guitar from '../screens/guitar/guitar'
+import Guitar from '../pages/guitar/guitar'
 
 export default function MainScroll() {
 
