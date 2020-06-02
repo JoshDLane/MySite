@@ -5,7 +5,7 @@ import App from './App';
 import { BrowserRouter } from 'react-router-dom'
 import * as serviceWorker from './serviceWorker';
 import "bootstrap/dist/css/bootstrap.css";
-import './assets/fonts/basic_serif.ttf'
+import './styles/fonts/basic_serif.ttf'
 
 ReactDOM.render(
   <React.StrictMode>

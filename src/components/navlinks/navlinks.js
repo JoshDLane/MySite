@@ -1,5 +1,5 @@
 import React from 'react';
-import '../../assets/rootstyles.css'
+import '../../styles/rootstyles.css'
 import './navlinks.css'
 const NavLinks = (props) => {
     return (

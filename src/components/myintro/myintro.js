@@ -20,7 +20,7 @@ export default function MyIntro(props) {
         <animated.div style={opacitySpring}>
             {/* <Bounce>
                 <div className="profilepic_container">
-                    <img src= {require("../../assets/test_face.png")} alt="portrait" className="profilepic"/>
+                    <img src= {require("../../styles/test_face.png")} alt="portrait" className="profilepic"/>
                 </div>
             </Bounce> */}
             <div className="home_intro_root">

@@ -4,15 +4,6 @@ import './toolIcons.css'
 
 export default function ToolIcons(props) {
     const [items, set] = useState([])
-    // const [index, setIndex] = useState(0)
-    // const tool_options = [
-    //     { key: 'react', image: "../../assets/img/React_logo.png" },
-    //     { key: 'react_native', image: "../../assets/img/React_logo.png" },
-    //     { key: 'd3', image: "../../assets/img/d3_logo.png" },
-    //     { key: 'netlify', image: "../../assets/img/netlify_logo.png" },
-    //     { key: 'css', image: "../../assets/img/css_logo.png" }]
-
-    // const tools = ['react', 'react_native', 'd3']
 
 
     const transitions = useTransition(items, item => item.key, {

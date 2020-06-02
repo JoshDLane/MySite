@@ -1,6 +1,6 @@
 import React from 'react';
 import './sectionTitle.css'
-import '../../assets/rootstyles.css'
+import '../../styles/rootstyles.css'
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
 import ToolIcons from '../toolIcons/toolIcons'

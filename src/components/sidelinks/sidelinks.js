@@ -12,7 +12,7 @@ export default function SideLinks(props) {
     const [isMounted, setIsMounted] = useState(false)
     
     useEffect(() => {
-        setTimeout(() => setIsMounted(true), 4000)
+        setTimeout(() => setIsMounted(true), 3500)
     })
     return (
         <React.Fragment>

@@ -1,11 +1,11 @@
 import React from 'react';
 import GitIcon from '../../components/gitIcon'
 import './checkoutGit.css'
-import '../../assets/rootstyles.css'
+import '../../styles/rootstyles.css'
 const CheckoutGit = (props) => {
     return (
         <div className="checkout_git_root">
-            <div class="center_column">
+            <div className="center_column">
                 <span className="myfont gitTxt white">Check it out @</span>
             </div>
                 <a href={props.link} className="git_icon icon_hover" >

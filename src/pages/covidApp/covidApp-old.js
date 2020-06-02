@@ -86,13 +86,13 @@ const CovidApp = (props) => {
                         config={config.molasses}>
                         {inView => inView && (props => <div style={props}>
                             <div ref={ref} className="screenshot_container animate">
-                                <img src={require("../../assets/covidScreenshotHome.png")} className="screenshot" />
+                                <img src={require("../../images/covidScreenshotHome.png")} className="screenshot" />
                             </div>
                         </div>)}
                     </Transition>
                 </React.Fragment> */}
                 <animated.div ref={ref} style={springprops} className="screenshot_container animate" id="animate">
-                <img src={require("../../assets/covidScreenshotHome.png")} className="screenshot" />
+                <img src={require("../../images/covidScreenshotHome.png")} className="screenshot" />
                 </animated.div>>
         </section>
     );

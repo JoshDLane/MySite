@@ -1,7 +1,7 @@
 import React from 'react';
 import './topLogo.css'
 import MyLogo from '../../images/myLogo';
-import '../../assets/rootstyles.css'
+import '../../styles/rootstyles.css'
 
 const TopLogo = () => {
     return (
