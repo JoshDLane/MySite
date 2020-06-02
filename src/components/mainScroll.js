@@ -10,7 +10,7 @@ import SectionTitle from './sectionTitle/sectionsTitle'
 import Navbar from './navbar/navbar'
 import ContactModal from './contactModal/contactModal'
 import Guitar from '../pages/guitar/guitar'
-
+import SideLinks from '../components/sidelinks/sidelinks'
 export default function MainScroll() {
 
     const [atTop, setAtTop] = useState(true)
@@ -43,6 +43,7 @@ export default function MainScroll() {
                 <ContactModal show={contactModal} setModalClosed={closeModal}/>
                 <div className="side_pads">
                     <TopLogo />
+                    <SideLinks/>
                     <Navbar top={atTop} onClick={showContact}/>
                     <Home top={atTop} />
                     <SectionTitle title="A Mobile Dashboard Using React Native and D3" section={"covid"}/>
@@ -52,7 +53,7 @@ export default function MainScroll() {
                     <SectionTitle section={"guitar"}/>
                     <Guitar/>
                 </div>
-                <Footer onMailClick={showContact}/>
+                {/* <Footer onMailClick={showContact}/> */}
             </div>
         </React.Fragment>
 

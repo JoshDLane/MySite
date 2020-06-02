@@ -1,0 +1,57 @@
+.fadeLeft-enter {
+  opacity: 0.01;
+  transform: translateX(100px);
+}
+
+.fadeLeft-enter-active {
+  opacity: 1;
+  transform: translateX(0px);
+  transition: opacity 400ms cubic-bezier(0.645, 0.045, 0.355, 1),  transform 400ms cubic-bezier(0.645, 0.045, 0.355, 1) ;
+  }
+
+  .my-node-enter {
+    opacity: 0;
+  }
+  .my-node-enter-active {
+    opacity: 1;
+    transition: opacity 2000ms;
+  }
+  .my-node-exit {
+    opacity: 1;
+  }
+  .my-node-exit-active {
+    opacity: 0;
+    transition: opacity 2000ms;
+  }
+
+.sideLink_container{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  align-content: center;
+  position: fixed;
+  right: 5vw;
+  bottom: 0px;
+}
+
+.dec_line{
+  content: '';
+  display: block;
+  width: 1px;
+  height: 90px;
+  margin: 10px auto 0 auto;
+  background-color: white;
+}
+
+.side_icon{
+    margin: 0px 0px 25px 0px;
+    width: 25px;
+}
+.side_icon svg{
+  fill: white;
+}
+
+.delay{
+  transition-delay: 100ms;
+}

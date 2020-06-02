@@ -1,6 +1,6 @@
 import React from 'react';
 import './covidApp.css'
-import '../../assets/rootstyles.css'
+import '../../styles/rootstyles.css'
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
 import CheckoutGit from '../../components/checkoutGit/checkoutGit'
@@ -33,7 +33,7 @@ const CovidApp = (props) => {
                             </div>
                         </animated.div>
                     </div>
-                    <animated.div class="page_right" style={opacitySpring}>
+                    <animated.div className="page_right" style={opacitySpring}>
                         <p className="myfont white">Integrated an API offered by the New York State Department of Health to provide 
                             <span className="emphasized teal"> up to date testing data on the county level</span> </p>
                         <p className="myfont white">Utilized D3 to geomap the data and create interactive time series charts</p>

@@ -90,3 +90,13 @@
     align-items: center;
     justify-content: center;
 }
+
+
+.icon_hover svg{
+    transition-duration: 300ms;
+    /* fill: inherit; */
+}
+
+.icon_hover:hover svg{
+    fill: #4ABDAC
+}

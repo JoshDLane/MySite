@@ -1,7 +1,7 @@
 import React from 'react';
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
-import '../../assets/rootstyles.css'
+import '../../styles/rootstyles.css'
 import './guitar.css'
 const Guitar = () => {
             const [ref2, inView] = useInView({
@@ -20,7 +20,7 @@ const Guitar = () => {
                                 <img src={require("../../images/guitar_pic.jpeg")} className="guitar_image" />
                             </div>
                         </animated.div>
-                        <animated.div class="page_right" style={opacitySpring}>
+                        <animated.div className="page_right" style={opacitySpring}>
                             <p className="myfont white">My sophmore year of highschool I recieved a grant to build an electric guitar during the summer. I loved spending most my waking hours on it and these memories drive me to seek projects that continue to push me</p>
                         </animated.div>
                     </div>

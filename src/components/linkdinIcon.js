@@ -3,7 +3,7 @@ import './iconstyles.css'
 
 function LinkdinIcon() {
   return (
-    <svg viewBox="0 0 23 22" className="icon">
+    <svg viewBox="0 0 23 22">
       <title>{"linkedin-logo"}</title>
       <path
         id='ln_icon'

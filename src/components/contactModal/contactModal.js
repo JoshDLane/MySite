@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import useSpring from 'react-spring'
 import './contactModal.css'
 
 export default function ContactModal(props) {
@@ -20,7 +21,7 @@ export default function ContactModal(props) {
             <div className="close_cont" onClick={props.setModalClosed}>
                 <h1>X</h1>
             </div>
-            <span class="myfont email_size">joshdlane22@gmail.com</span>
+            <span className="myfont email_size">joshdlane22@gmail.com</span>
         </div>
     )
 }

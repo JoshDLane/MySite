@@ -1,6 +1,9 @@
-.github_img_container{
-    width: 20%;
-    padding: 2%;
+.git_icon{
+    width: 25px;
+    margin: 10px 10px 13px 10px;
+}
+.git_icon svg{
+    fill: white
 }
 .gibhub_img{
     height: 100%;
@@ -10,12 +13,10 @@
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
 }
 
 .gitTxt {
     font-size: 30px;
+    text-align: center;
 }
-
-a svg {
-    fill: red;
-  }

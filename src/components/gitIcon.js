@@ -3,7 +3,7 @@ import './iconstyles.css'
 
 function GitIcon(props) {
   return (
-    <svg height="100%" width="100%" viewBox="0 0 13 13" className="icon">
+    <svg height="100%" width="100%" viewBox="0 0 13 13">
       <title>{"github"}</title>
       <path 
         id="git_icon"

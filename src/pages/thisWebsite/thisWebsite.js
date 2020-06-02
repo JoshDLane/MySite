@@ -2,7 +2,7 @@ import React from 'react'
 import './thisWebsite.css'
 import { useInView } from 'react-intersection-observer'
 import { useSpring, animated } from 'react-spring'
-import '../../assets/rootstyles.css'
+import '../../styles/rootstyles.css'
 import CheckoutGit from '../../components/checkoutGit/checkoutGit'
 import DownArrow from '../../components/downarrow/downarrow'
 
@@ -23,7 +23,7 @@ export default function ThisSite() {
                         <img src={require("../../images/testing.png")} className="siteImage" />
                     </div>
                 </animated.div>
-                <animated.div class="page_right" style={opacitySpring}>
+                <animated.div className="page_right" style={opacitySpring}>
                     <p className="myfont white">After really enjoying using React Native, I knew I wanted my next web dev project to use React</p>
                     <CheckoutGit link="https://github.com/JoshDLane/MySite" color="white"/>
                 </animated.div>
