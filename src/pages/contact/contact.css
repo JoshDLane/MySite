@@ -1,0 +1,29 @@
+.contact_sec_cont{
+    height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact_text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.contact_intro{
+    color:white;
+    font-size: 30px;
+    text-align: center;
+}
+
+.detail{
+    font-size: 20px;
+}
+.email{
+    font-size: 38px;
+    color: #4ABDAC;
+    margin-top: 40px;
+}

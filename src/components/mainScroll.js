@@ -52,6 +52,7 @@ export default function MainScroll() {
                     <ThisWebsite />
                     <SectionTitle section={"guitar"}/>
                     <Guitar/>
+                    <Contact id={'contact'} />
                 </div>
                 {/* <Footer onMailClick={showContact}/> */}
             </div>

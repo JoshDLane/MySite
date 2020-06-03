@@ -1,11 +1,15 @@
 import React from 'react';
 import '../../styles/rootstyles.css'
 import './navlinks.css'
+import { Link, animateScroll as scroll } from "react-scroll";
+
 const NavLinks = (props) => {
     return (
         <div className="align_center_row">
             <div className="link_container">
-                <div className="nav_link" onClick={props.onContact}>CONTACT</div>
+                <Link to='contact' smooth={true}>
+                    <div className="nav_link">CONTACT</div>
+                </Link>
             </div>
             <span className="seperator">|</span>
             <div className="link_container">
