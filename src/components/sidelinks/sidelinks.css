@@ -41,3 +41,10 @@
 .delay{
   transition-delay: 100ms;
 }
+
+
+@media (max-width: 1024px) {
+  .sideLink_container{
+      display: none;
+  }
+}
