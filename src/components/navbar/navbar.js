@@ -18,9 +18,6 @@ export default function Navbar(props) {
     }, [props.top])
 
     const myContext = <nav className='nav_container'>
-        <div className="logo_container include_logo">
-            <MyLogo />
-        </div>
         <NavLinks onContact={props.onClick}/>
     </nav>
     return (
