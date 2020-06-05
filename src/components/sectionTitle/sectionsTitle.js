@@ -14,33 +14,18 @@ const SectionTitle = (props) => {
     const opacitySpring = useSpring({
         opacity: titleInView ? 1 : 0
     })
-        if (props.title) {
-            return (
+        return (
                 <div className="">
                     <animated.div ref={ref} style={opacitySpring} className="section_title_cont">
                         <span className="section_title">
                             {props.title}
                         </span>
                     </animated.div>
-                    <ToolIcons show={titleInView} section={props.section} />
+                    <ToolIcons show={titleInView} tools={props.tools} />
                 </div>
             );
-        } else if (props.section == 'guitar') {
-            return (
-                <React.Fragment>
-                    <animated.div ref={ref} style={opacitySpring} className="section_title_cont">
-                        <span className="section_title">
-                            Do i play guitar? No. Did I really want to build one? Yes...
-                        </span>
-                    </animated.div>
-                    <ToolIcons show={titleInView} section={props.section} />
-                </React.Fragment>
-
-            )}
-        else{
-            return null
+        
         }
 
-    }
 
 export default SectionTitle;

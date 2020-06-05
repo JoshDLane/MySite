@@ -25,7 +25,6 @@ export default function SideLinks(props) {
                                     <GitIcon />
                                 </a>
                             </div>
-
                         </CSSTransition>
                         <CSSTransition in={isMounted} classNames="fadeLeft" timeout={2000}>
                             <div className="side_icon icon_hover" style={{ transitionDelay: '300ms' }}>

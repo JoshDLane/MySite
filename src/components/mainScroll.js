@@ -46,11 +46,11 @@ export default function MainScroll() {
                     <SideLinks/>
                     <Navbar top={atTop} onClick={showContact}/>
                     <Home top={atTop} />
-                    <SectionTitle title="A Mobile Dashboard Using React Native and D3" section={"covid"}/>
+                    <SectionTitle title="A Mobile Dashboard Using React Native and D3" tools={["React Native", "Javascript","D3"]}/>
                     <CovidApp />
-                    <SectionTitle title="This Site!" section={"mysite"}/>
+                    <SectionTitle title="This Site!" tools={["React", "Javascript", "CSS", "Netlify"]}/>
                     <ThisWebsite />
-                    <SectionTitle section={"guitar"}/>
+                    <SectionTitle title="Do I play guitar? No. Did I really want to build one? Yes..." tools={["Wood"]}/>
                     <Guitar/>
                     <Contact id={'contact'} />
                 </div>
