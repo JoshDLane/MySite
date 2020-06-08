@@ -22,9 +22,18 @@
 .detail{
     font-size: 20px;
     margin-top: 15px;
+    width: 80vw;
 }
 .email{
     font-size: 38px;
     color: #4ABDAC;
     margin-top: 40px;
+    cursor: pointer;
+}
+
+ @media (max-width: 1024px) {
+
+    .email{
+        font-size: 5vw;
+    } 
 }
