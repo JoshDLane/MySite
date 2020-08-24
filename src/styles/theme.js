@@ -1,6 +1,9 @@
 const colors = {
-    myOrange: ""
+    myOrange: "",
+    myGreen: "#4ABDAC"
 }
 
 
-export const loaderDelay = 3000
+const loaderDelay = 3000
+
+export {colors, loaderDelay}

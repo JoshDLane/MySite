@@ -27,8 +27,8 @@
     position: absolute;
     top: 50vh;
     left: 50vw;
-    width: 15vh;
-    height: 15vh;
-    margin-top: -7.5vh;
-    margin-left: -7.5vh;
+    height: 75px;
+    width: 125px;
+    margin-top: -37.50px;
+    margin-left: -75px;
 }
