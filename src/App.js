@@ -1,5 +1,5 @@
 import React from 'react';
-import { Switch, Route, Router } from 'react-router-dom'
+import { Switch, Route, BrowserRouter } from 'react-router-dom'
 import MainScroll from './components/mainScroll'
 import ReactGA from 'react-ga';
 import Poe from './pages/poe/poe'
@@ -13,12 +13,12 @@ function App() {
   initializeReactGA()
   return (
     <div className="App">
-      <Router>
+      <BrowserRouter>
       <Switch>
         <Route exact path="/" component={MainScroll} />
         <Route path="/poe" component={Poe} />
       </Switch>
-      </Router>
+      </BrowserRouter>
     </div>
   );
 }
