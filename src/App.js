@@ -15,8 +15,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
       <Switch>
-        <Route exact path="/" component={MainScroll} />
-        <Route path="/poe" component={Poe} />
+      <Route path="/poe" component={Poe} />
+        <Route path="/" component={MainScroll} />
       </Switch>
       </BrowserRouter>
     </div>
