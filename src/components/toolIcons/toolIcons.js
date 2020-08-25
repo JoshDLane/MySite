@@ -41,8 +41,10 @@ export default function ToolIcons(props) {
     const currentTools = tools.filter(tool => useTools.includes(tool.name));
 
     useEffect(()=>{
-        setUseTools(props.tools)
-    }, [])
+        if (props.tools){
+            setUseTools(props.tools)
+        }
+    }, [props.tools])
 
         return (
             <TransitionGroup className="tools_root">
