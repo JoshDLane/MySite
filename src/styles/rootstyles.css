@@ -3,7 +3,7 @@
 }
 
 .center_on_row{
-    align-content: center;
+    align-items: center;
 }
 
 .center_column{
@@ -19,7 +19,7 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .page_right{
@@ -28,7 +28,7 @@
     height: 100%;
     display: flex;
     flex-direction: column;
-    align-content: flex-end;
+    align-items: flex-end;
     justify-content: space-around;
 }
 
@@ -71,7 +71,7 @@
 
 .centered{
     justify-content: center;
-    align-content: center;
+    align-items: center;
 }
 
 .myblue{
@@ -102,4 +102,40 @@
 
 .icon_hover:hover svg{
     fill: #4ABDAC
+}
+
+
+.fade-in-enter{
+    opacity: 0;
+    /* transform: translateY(50px); */
+}
+.fade-in-enter-active{
+    opacity: 1;
+    transition: 750ms ease-in-out;
+}
+.fade-in-exit{
+    opacity: 1;
+}
+.fade-in-exit-active{
+    opacity: 0;
+    transition: 750ms ease-in;
+}
+
+.from-left-enter{
+    opacity: 0;
+    transform: translateX(-50px);
+}
+.from-left-enter-active{
+    opacity: 1;
+    transform: translateX(0px);
+    transition: 750ms ease-in-out;
+}
+.from-left-exit{
+    opacity: 1;
+    transform: translateX(0px);
+}
+.from-left-exit-active{
+    opacity: 0;
+    transform: translateX(-50px);
+    transition: 750ms ease-in;
 }

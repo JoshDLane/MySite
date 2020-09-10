@@ -1,32 +1,47 @@
-import React from 'react';
-import { useSpring, animated } from 'react-spring'
-import { useInView } from 'react-intersection-observer'
+import React from "react";
+import { useSpring, animated } from "react-spring";
+import { useInView } from "react-intersection-observer";
+import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-import CheckoutGit from '../../components/checkoutGit/checkoutGit'
+import SectionTitle from '../../components/sectionTitle/sectionsTitle'
+import CheckoutGit from "../../components/checkoutGit/checkoutGit";
 
-import '../../styles/rootstyles.css'
-import './poeAudio.css'
+import "../../styles/rootstyles.css";
+import "./poeAudio.css";
 
 const PoeAudio = (props) => {
+  const [ref, inView] = useInView({
+    rootMargin: "-125px 0px -200px 0px",
+  });
 
-    const [ref, inView ] = useInView({
-        rootMargin: '-125px 0px -200px 0px',
-    })
- 
-    const screenshotSprings = useSpring({
-        transform: inView ? 'translate3d(0vw,0,0)' : 'translate3d(-10vw,0,0)',
-        opacity: inView ? 1 : 0
+  const screenshotSprings = useSpring({
+    transform: inView ? "translate3d(0vw,0,0)" : "translate3d(-10vw,0,0)",
+    opacity: inView ? 1 : 0,
+  });
 
-    })
-
-    const opacitySpring = useSpring({
-        opacity: inView ? 1 : 0
-    })
-    return (
-            <section className="section_content">
-                <div className="segment_row covid_cont">
-                    <div className="page_left">
-                        <animated.div ref={ref} style={screenshotSprings} className="screenshot_root">
+  const opacitySpring = useSpring({
+    opacity: inView ? 1 : 0,
+  });
+  const poePics = [
+    {
+      name: "primary",
+      img: require("../../images/poeAudioScreenshot1.png"),
+    },
+    {
+      name: "secondary",
+      img: require("../../images/poeAudioScreenshot2.png"),
+    },
+    {
+      name: "tertiary",
+      img: require("../../images/poeAudioScreenshot3.png"),
+    },
+  ];
+  return (
+    <section className="section_content">
+    <SectionTitle title="Poe - Audio Poems" tools={["React Native", "NLP","AWS"]}/>
+      <div className="segment_row covid_cont">
+        <div className="page_left" ref={ref}>
+          {/* <animated.span ref={ref} style={screenshotSprings} className="screenshot_root_poe">
                             <div className="audio_poem_shots">
                                 <img src={require("../../images/poeAudioScreenshot1.png")} className="screenshot_poe" />
                             </div>
@@ -36,19 +51,44 @@ const PoeAudio = (props) => {
                             <div className="audio_poem_shots">
                                 <img src={require("../../images/poeAudioScreenshot3.png")} className="screenshot_poe" />
                             </div>
-                        </animated.div>
-                    </div>
-                    <animated.div className="page_right" style={opacitySpring}>
-                        <p className="myfont white">Integrated an API offered by the New York State Department of Health to provide 
-                            <span className="emphasized teal"> up to date testing data on the county level</span> </p>
-                        <p className="myfont white">Utilized D3 to geomap the data and create interactive time series charts</p>
-                        <CheckoutGit link="https://github.com/JoshDLane/NYSCovidTesting"  color="white"/>
-                    </animated.div>
-                </div>
-        </section>
-
-    );
-};  
+                        </animated.span> */}
+          <TransitionGroup className="screenshot_root_poe" >
+            {inView &&
+              poePics.map((item, i) => (
+                <CSSTransition
+                  key={item.name}
+                  timeout={3000}
+                  classNames="fade-in"
+                  style={{ transitionDelay: `${inView ? i * 200 : 0}ms` }}
+                >
+                  <div className="audio_poem_shots">
+                    <img src={item.img} alt={item.name} className="screenshot_poe"/>
+                  </div>
+                </CSSTransition>
+              ))}
+          </TransitionGroup>
+        </div>
+        <animated.div className="page_right" style={opacitySpring}>
+          <p className="myfont white">
+            Integrated an API offered by the New York State Department of Health
+            to provide
+            <span className="emphasized teal">
+              {" "}
+              up to date testing data on the county level
+            </span>{" "}
+          </p>
+          <p className="myfont white">
+            Utilized D3 to geomap the data and create interactive time series
+            charts
+          </p>
+          <CheckoutGit
+            link="https://github.com/JoshDLane/NYSCovidTesting"
+            color="white"
+          />
+        </animated.div>
+      </div>
+    </section>
+  );
+};
 
 export default PoeAudio;
-
