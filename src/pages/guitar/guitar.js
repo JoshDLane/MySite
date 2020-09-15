@@ -2,26 +2,29 @@ import React from "react";
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
+import Slider from "../../components/slider/slider";
 
 import "../../styles/rootstyles.css";
 import "./guitar.css";
-const Guitar = () => {
-  const [ref2, inView] = useInView({
-    rootMargin: "-125px 0px -200px 0px",
-  });
 
-  const opacitySpring = useSpring({
-    opacity: inView ? 1 : 0,
-  });
+const Guitar = () => {
+  // const [ref2, inView] = useInView({
+  //   rootMargin: "-125px 0px -200px 0px",
+  // });
+
+  // const opacitySpring = useSpring({
+  //   opacity: inView ? 1 : 0,
+  // });
 
   return (
     <section className="section_content sec_background guitar_background">
       <SectionTitle
-        title="Do I play guitar? No. Did I really want to build one? Yes..."
-        tools={["Wood"]}
+        title="My more physical projects..."
+        tools={["Wood", "Drawing"]}
       />
       <div className="segment_row">
-        <animated.div ref={ref2} style={opacitySpring} className="page_left">
+        <Slider/>
+        {/* <animated.div ref={ref2} style={opacitySpring} className="page_left">
           <div className="guitar_image_container">
             <img
               src={require("../../images/guitar_pic.jpeg")}
@@ -36,7 +39,7 @@ const Guitar = () => {
             hours on it and these memories drive me to seek projects that
             continue to push me
           </p>
-        </animated.div>
+        </animated.div> */}
       </div>
     </section>
   );

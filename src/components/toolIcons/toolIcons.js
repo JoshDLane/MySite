@@ -21,6 +21,10 @@ export default function ToolIcons(props) {
         img: require('../../images/nlp_logo.png')
     },
     {
+        name: 'Drawing',
+        img: require('../../images/light_drawing_logo.png')
+    },
+    {
         name: 'AWS',
         img: require('../../images/aws_logo.png')
     },
