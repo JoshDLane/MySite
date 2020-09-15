@@ -24,7 +24,7 @@ export default function ThisSite() {
     <section className="section_content sec_background">
       <SectionTitle
         title="This Site!"
-        tools={["React", "Javascript", "CSS", "Netlify"]}
+        tools={["React", "Javascript Light", "CSS Light", "Netlify"]}
       />
 
       <div className="segment_row mysite_background">
@@ -37,7 +37,7 @@ export default function ThisSite() {
           </div>
         </animated.div>
         <animated.div className="page_right" style={opacitySpring}>
-          <p className="myfont white">
+          <p className="myfont white paragraph_size">
             After really enjoying using React Native, I knew I wanted my next
             web dev project to use React
           </p>

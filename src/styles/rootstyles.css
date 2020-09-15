@@ -1,5 +1,5 @@
 .myfont{
-    font-family: BasicSerif;
+    font-family: Calibri;
 }
 
 .center_on_row{
@@ -154,5 +154,16 @@
 }
 
 .smaller_font{
-    font-size: 10px;
+    font-size: 15px;
+}
+
+.black{
+    color: black
+}
+
+.paragraph_size{
+    font-size: 20;
+}
+.subtitle{
+    font-size: 30px;
 }

@@ -29,6 +29,10 @@ export default function MyIntro(props) {
                         <span className="before_name myfont name_size"> Hi, I'm </span>
                         <span className="name myfont name_size">&nbsp;Josh</span>
                     </div>
+                    <p className="white myfont subtitle">Constintly learning while pursing to create</p>
+                    <p className="white myfont subtitle">Data Scientist by profession</p>
+                    <p className="white myfont subtitle">Constintly learning while pursing to create</p>
+
                 </div>
                 
                 <DownArrow show={props.top} title={'Checkout some of my work'}/>

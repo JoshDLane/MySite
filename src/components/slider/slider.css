@@ -2,39 +2,64 @@
     width: 80vw;
     position: relative;
     height: 60vh;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     /* justify-content: center; */
     box-sizing: border-box;
     padding: 0;
     margin: 0;
+    overflow: hidden;
 }
 
 .slide{
     height: 100%;
     min-width: 80vw;
-    border: 1px solid blue;
     transition: 0.5s;
     padding: 0 5%
 }
 
 #goLeft {
+    left: 0;
+}
+.moveButton{
     position: absolute;
     top: 50%;
-    left: 0;
     transform: translateY(-50%);
     width: 5%;
     height: 100%;
     background: none;
+    border: none;
+    outline: none;
+}
+.moveButton:hover {
+    background: rgba(0, 0, 0, 0.418);
+    transition: 0.5s
+}
+#goRight {
+    right: 0;
+}
+.moveButton:focus {
+    outline: none;
 }
 
-#goRight {
+.chevron{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-bottom:1px solid white;
+    border-right:1px solid white;
+    transform: rotate(135deg);
     position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 5%;
-    height: 100%;
-    background: none;
 }
+
+#leftArrow{
+    transform: rotate(135deg);
+    position: absolute;
+    left: 20px;
+}
+#rightArrow{
+    transform: rotate(-45deg);
+    position: absolute;
+    right: 20px;
+}
+

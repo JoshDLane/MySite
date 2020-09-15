@@ -13,7 +13,7 @@ function GuitarSlide(props) {
           </div>
         </div>
         <div className="page_right">
-          <p className="myfont white">
+          <p className="myfont white paragraph_size">
             My sophmore year of highschool I recieved a grant to build an
             electric guitar during the summer. I loved spending most my waking
             hours on it and these memories drive me to seek projects that

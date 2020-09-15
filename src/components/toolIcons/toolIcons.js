@@ -45,6 +45,10 @@ export default function ToolIcons(props) {
         img: require('../../images/css_logo.png')
     },
     {
+        name: 'CSS Light',
+        img: require('../../images/css_logo_light.png')
+    },
+    {
         name: 'D3',
         img: require('../../images/d3_logo.png')
     },
