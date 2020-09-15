@@ -3,7 +3,7 @@ import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-import SectionTitle from '../../components/sectionTitle/sectionsTitle'
+import SectionTitle from "../../components/sectionTitle/sectionsTitle";
 import CheckoutGit from "../../components/checkoutGit/checkoutGit";
 
 import "../../styles/rootstyles.css";
@@ -37,8 +37,12 @@ const PoeAudio = (props) => {
     },
   ];
   return (
-    <section className="section_content">
-    <SectionTitle title="Poe - Audio Poems" tools={["React Native", "NLP","AWS"]}/>
+    <section className="section_content sec_background poe_background">
+      <SectionTitle
+        title="Poe - Audio Poems"
+        tools={["React Native", "TF", "NLP", "AWS Dark"]}
+        color="pink"
+      />
       <div className="segment_row covid_cont">
         <div className="page_left" ref={ref}>
           {/* <animated.span ref={ref} style={screenshotSprings} className="screenshot_root_poe">
@@ -52,7 +56,7 @@ const PoeAudio = (props) => {
                                 <img src={require("../../images/poeAudioScreenshot3.png")} className="screenshot_poe" />
                             </div>
                         </animated.span> */}
-          <TransitionGroup className="screenshot_root_poe" >
+          <TransitionGroup className="screenshot_root_poe">
             {inView &&
               poePics.map((item, i) => (
                 <CSSTransition
@@ -62,7 +66,11 @@ const PoeAudio = (props) => {
                   style={{ transitionDelay: `${inView ? i * 200 : 0}ms` }}
                 >
                   <div className="audio_poem_shots">
-                    <img src={item.img} alt={item.name} className="screenshot_poe"/>
+                    <img
+                      src={item.img}
+                      alt={item.name}
+                      className="screenshot_poe"
+                    />
                   </div>
                 </CSSTransition>
               ))}

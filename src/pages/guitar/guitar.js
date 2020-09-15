@@ -15,12 +15,12 @@ const Guitar = () => {
   });
 
   return (
-    <section className="section_content">
+    <section className="section_content sec_background guitar_background">
       <SectionTitle
         title="Do I play guitar? No. Did I really want to build one? Yes..."
         tools={["Wood"]}
       />
-      <div className="segment_row guitar_background">
+      <div className="segment_row">
         <animated.div ref={ref2} style={opacitySpring} className="page_left">
           <div className="guitar_image_container">
             <img

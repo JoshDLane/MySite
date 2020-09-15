@@ -15,9 +15,11 @@
     flex-direction: row;
     justify-content: center;
     height: 100%;
-    /* width: 30%; */
     width: 100%;
     align-items: center;
+}
+.poe_background{
+    background-color: #dbebfa;
 }
 
 @media (max-width: 1024px) {

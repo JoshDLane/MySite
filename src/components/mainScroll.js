@@ -43,7 +43,7 @@ export default function MainScroll() {
         <React.Fragment>
             <div className={`page_content ${contactModal ? 'hideScroll' : ''}`}>
                 <ContactModal show={contactModal} setModalClosed={closeModal}/>
-                <div className="side_pads">
+                <div>
                     <TopLogo />
                     <SideLinks/>
                     <Navbar top={atTop} onClick={showContact}/>

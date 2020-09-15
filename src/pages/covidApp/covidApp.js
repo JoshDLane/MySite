@@ -3,7 +3,7 @@ import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-import SectionTitle from '../../components/sectionTitle/sectionsTitle'
+import SectionTitle from "../../components/sectionTitle/sectionsTitle";
 import CheckoutGit from "../../components/checkoutGit/checkoutGit";
 
 import "./covidApp.css";
@@ -17,7 +17,6 @@ const CovidApp = (props) => {
   const screenshotSprings = useSpring({
     transform: inView ? "translate3d(0vw,0,0)" : "translate3d(-10vw,0,0)",
     opacity: inView ? 1 : 0,
-    // config={config.molasses}
   });
 
   const opacitySpring = useSpring({
@@ -43,8 +42,11 @@ const CovidApp = (props) => {
   );
 
   return (
-    <section className="section_content cov_backgroun">
-    <SectionTitle title="A Mobile Dashboard Using React Native and D3" tools={["React Native", "Javascript","D3"]}/>
+    <section className="section_content sec_background cov_background">
+      <SectionTitle
+        title="A Mobile Dashboard Using React Native and D3"
+        tools={["React Native", "Javascript Light", "D3"]}
+      />
       <div className="segment_row covid_cont">
         <div className="page_left" ref={ref}>
           {/* <Transition
@@ -55,27 +57,26 @@ const CovidApp = (props) => {
                 config={config.molasses}>
                 {inView => inView && (props => <div style={props}>{myContext}</div>)}
             </Transition> */}
-            <TransitionGroup style={{width: '100%', height: '100%'}}>
-
-        {inView && 
-          <CSSTransition timeout={3000} classNames="from-left">
-            <div className="screenshot_root_cov">
-              <div className="screenshot_container">
-                <img
-                  src={require("../../images/covidScreenshotHome.png")}
-                  className="screenshot"
-                />
-              </div>
-              <div className="screenshot_container">
-                <img
-                  src={require("../../images/covidScreenshotLineG.png")}
-                  className="screenshot"
-                />
-              </div>
-            </div>
-          </CSSTransition>
-}
-</TransitionGroup>
+          <TransitionGroup style={{ width: "100%", height: "100%" }}>
+            {inView && (
+              <CSSTransition timeout={3000} classNames="from-left">
+                <div className="screenshot_root_cov">
+                  <div className="screenshot_container">
+                    <img
+                      src={require("../../images/covidScreenshotHome.png")}
+                      className="screenshot"
+                    />
+                  </div>
+                  <div className="screenshot_container">
+                    <img
+                      src={require("../../images/covidScreenshotLineG.png")}
+                      className="screenshot"
+                    />
+                  </div>
+                </div>
+              </CSSTransition>
+            )}
+          </TransitionGroup>
 
           {/* <animated.div ref={ref} style={screenshotSprings} className="screenshot_root">
                             <div className="screenshot_container">

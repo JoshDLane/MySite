@@ -25,8 +25,16 @@ export default function ToolIcons(props) {
         img: require('../../images/aws_logo.png')
     },
     {
+        name: 'AWS Dark',
+        img: require('../../images/aws_logo_dark.png')
+    },
+    {
         name: 'Javascript',
         img: require('../../images/javascript_logo.png')
+    },
+    {
+        name: 'Javascript Light',
+        img: require('../../images/js_logo_light.png')
     },
     {
         name: 'CSS',
@@ -43,6 +51,10 @@ export default function ToolIcons(props) {
     {
         name: 'Wood',
         img: require('../../images/wood.png')
+    },
+    {
+        name: 'TF',
+        img: require('../../images/tf_logo.png')
     }
     ]
     

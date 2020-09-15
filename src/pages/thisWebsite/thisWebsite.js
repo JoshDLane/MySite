@@ -21,7 +21,7 @@ export default function ThisSite() {
   });
 
   return (
-    <section className="section_content">
+    <section className="section_content sec_background">
       <SectionTitle
         title="This Site!"
         tools={["React", "Javascript", "CSS", "Netlify"]}
