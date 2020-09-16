@@ -1,27 +1,25 @@
-import React from 'react';
-import '../../styles/rootstyles.css'
-import './guitarSlide.css'
+import React from "react";
+import "../../styles/rootstyles.css";
+import "./guitarSlide.css";
 function GuitarSlide(props) {
-    return (
-        <div className="slide_cont">
-        <div className="page_left">
-          <div className="guitar_image_container">
-            <img
-              src={require("../../images/guitar_pic.jpeg")}
-              className="guitar_image"
-            />
-          </div>
+  return (
+    <div className="slide_cont">
+      <div className="page_left">
+        <div className="slide_img_cont">
+          <img
+            src={require("../../images/guitar_pic.jpeg")}
+          />
         </div>
-        <div className="page_right">
-          <p className="myfont white paragraph_size">
-            My sophmore year of highschool I recieved a grant to build an
-            electric guitar during the summer. I loved spending most my waking
-            hours on it and these memories drive me to seek projects that
-            continue to push me
-          </p>
-        </div>
-        </div>
-    );
+      </div>
+      <div className="page_right">
+        <span className="myfont white paragraph_size">Electric Guitar -</span>
+        <p className="myfont white paragraph_size main_txt">
+          It was the summer I spent building this guitar that I realized the joy
+          I get from taking on big projects
+        </p>
+      </div>
+    </div>
+  );
 }
 
 export default GuitarSlide;

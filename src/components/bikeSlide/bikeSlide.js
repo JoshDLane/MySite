@@ -5,19 +5,18 @@ function BikeSlide(props) {
   return (
     <div className="slide_cont">
       <div className="page_left">
-        <div className="guitar_image_container">
+        <div className="slide_img_cont">
           <img
             src={require("../../images/bambooBike.jpeg")}
-            className="guitar_image"
           />
         </div>
       </div>
       <div className="page_right">
-        <span className="myfont white">Bamboo Bike -</span>
-        <div className="padding">
-          <p className="myfont white">
-            I thought it would be cool to build a completely organic bike frame
-            using bamboo and hemp fiber for joints.
+        <span className="myfont white paragraph_size">Bamboo Bike -</span>
+        <div className="body">
+          <p className="myfont white paragraph_size bottom_pad">
+            A completely organic bike frame
+            using bamboo and hemp fiber for joints
           </p>
           <span className="myfont white">Fun Fact!</span>
           <p className="myfont white smaller_font">
