@@ -2,9 +2,18 @@
     width: 25px;
     margin: 10px 10px 13px 10px;
 }
-/* .git_icon svg{
+.dark {
+    color: black
+}
+.light {
+    color: white
+}
+.dark svg{
+    fill: black
+}
+.light svg{
     fill: white
-} */
+}
 .gibhub_img{
     height: 100%;
 }

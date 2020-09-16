@@ -91,7 +91,7 @@ const PoeAudio = (props) => {
           </p>
           <CheckoutGit
             link="https://github.com/JoshDLane/NYSCovidTesting"
-            color="black"
+            dark={true}
           />
         </animated.div>
       </div>
