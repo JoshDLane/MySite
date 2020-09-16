@@ -91,7 +91,7 @@ const CovidApp = (props) => {
           <p className="myfont white paragraph_size">
             Integrated an API offered by the New York State Department of Health
             to provide
-            <span className="emphasized teal paragraph_size">
+            <span className="myblue paragraph_size">
               {" "}
               up to date testing data on the county level
             </span>{" "}

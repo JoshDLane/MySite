@@ -5,7 +5,7 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
 import CheckoutGit from "../../components/checkoutGit/checkoutGit";
-
+import AppStoreButton from "../../components/appStoreButton/appStoreButton";
 import "../../styles/rootstyles.css";
 import "./poeAudio.css";
 
@@ -78,21 +78,23 @@ const PoeAudio = (props) => {
         </div>
         <animated.div className="page_right" style={opacitySpring}>
           <p className="myfont paragraph_size">
-            Integrated an API offered by the New York State Department of Health
-            to provide
-            <span className="emphasized teal paragraph_size">
+            Audio poem player and recomendation system
+            {/* <span className="emphasized teal paragraph_size">
               {" "}
               up to date testing data on the county level
-            </span>{" "}
+            </span>{" "} */}
           </p>
           <p className="myfont paragraph_size">
-            Utilized D3 to geomap the data and create interactive time series
-            charts
+            Implimented a lightweight version of the Universal Sentence Encoder
+            as a REST API with AWS to power the apps recomendations
           </p>
-          <CheckoutGit
+          {/* <CheckoutGit
             link="https://github.com/JoshDLane/NYSCovidTesting"
             dark={true}
-          />
+          /> */}
+          <a href="https://apps.apple.com/us/app/poe-audio-poems/id1529015835" target="_blank">
+            <AppStoreButton />
+          </a>
         </animated.div>
       </div>
     </section>
