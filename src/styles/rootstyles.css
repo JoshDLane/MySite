@@ -133,14 +133,14 @@
 }
 .fade-in-enter-active{
     opacity: 1;
-    transition: 750ms ease-in-out;
+    transition: 1000ms ease-in-out;
 }
 .fade-in-exit{
     opacity: 1;
 }
 .fade-in-exit-active{
     opacity: 0;
-    transition: 750ms ease-in;
+    transition: 1000ms ease-in;
 }
 
 .from-left-enter{
