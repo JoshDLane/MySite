@@ -29,9 +29,10 @@ export default function MyIntro(props) {
                         <span className="before_name myfont name_size"> Hi, I'm </span>
                         <span className="name myfont name_size">&nbsp;Josh</span>
                     </div>
-                    <p className="white myfont subtitle">Constintly learning while pursing to create</p>
-                    <p className="white myfont subtitle">Data Scientist by profession</p>
-                    <p className="white myfont subtitle">Constintly learning while pursing to create</p>
+                    {/* <p className="white myfont subtitle intro">Constantly learning while creating</p> */}
+                    <p className="myfont largeSub intro">Creator. Problem Solver. Outcome Driven.</p>
+                    <p className="white myfont subtitle intro">Data Scientist by profession</p>
+                    {/* <p className="white myfont subtitle intro">A creator and problem solver </p> */}
 
                 </div>
                 

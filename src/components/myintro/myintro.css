@@ -8,13 +8,21 @@
     color: white;
 }
 .name {
-    color: #fed42e;
+    color: #4ABDAC;
+    /* color: #fed42e; */
     /* color: #f95f3c;  */
 }
 .name_size{
-    font-size: calc(5vw);
+    font-size: calc(7vw);
 }
 
+.intro{
+    margin-bottom: 0;
+}
+.largeSub{
+    color: #949fbf;
+    font-size: calc(4vw);
+}
 .intro_container{
     position: absolute;
     left: 15%;

@@ -41,7 +41,7 @@ const PoeAudio = (props) => {
       <SectionTitle
         title="Poe - Audio Poems"
         tools={["React Native", "TF", "NLP", "AWS Dark"]}
-        color="pink"
+        color="black"
       />
       <div className="segment_row covid_cont">
         <div className="page_left" ref={ref}>
@@ -91,7 +91,7 @@ const PoeAudio = (props) => {
           </p>
           <CheckoutGit
             link="https://github.com/JoshDLane/NYSCovidTesting"
-            color="white"
+            color="black"
           />
         </animated.div>
       </div>
