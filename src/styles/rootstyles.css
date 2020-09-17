@@ -61,7 +61,7 @@
         padding: 10px;
     }
     .paragraph_size{
-        font-size: 4.5vw;
+        font-size: min(4.5vw, 18px);
     }
     .page_left{
         width: 100%;
