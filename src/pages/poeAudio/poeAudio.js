@@ -70,13 +70,11 @@ const PoeAudio = (props) => {
                   classNames="fade-in"
                   style={{ transitionDelay: `${inView ? i * 200 : 0}ms` }}
                 >
-                  <div className="audio_poem_shots">
                     <img
                       src={item.src}
                       alt={item.name}
                       className="screenshot_poe"
                     />
-                  </div>
                 </CSSTransition>
               ))}
           </TransitionGroup>

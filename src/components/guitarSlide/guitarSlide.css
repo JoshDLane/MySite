@@ -7,6 +7,14 @@
     display: flex;
 }
 
+
+@media (max-width: 1024px) {
+    .slide_cont{
+        flex-direction: column;
+    }
+}
+       
+
 .padding{
     padding: 5px
 }

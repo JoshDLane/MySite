@@ -29,7 +29,6 @@ export default function ThisSite() {
         tools={["React", "Javascript Light", "CSS Light", "Netlify"]}
         color="white"
       />
-
       <div className="segment_row mysite_background">
         <animated.div ref={ref} style={opacitySpring} className="page_left">
           <div className="siteImage_container">

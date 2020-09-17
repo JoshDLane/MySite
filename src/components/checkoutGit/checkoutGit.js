@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import GitIcon from "../../components/gitIcon";
 import styled from "styled-components";
 
@@ -8,8 +8,13 @@ import "../../styles/rootstyles.css";
 const GitText = styled.span`
   color: ${(props) => props.color};
 `;
+
 const CheckoutGit = (props) => {
 
+useEffect(()=>{
+  console.log(props.link)
+  }, [props.link])
+  
   return (
     <div className="checkout_git_root">
       <div className="center_column">

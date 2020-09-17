@@ -28,30 +28,26 @@ const CovidApp = (props) => {
   return (
     <section className="section_content sec_background cov_background">
       <SectionTitle
-        title="A Mobile Dashboard Using React Native and D3"
+        title="NYS Covid Testing Dashboard"
         tools={["React Native", "Javascript Light", "D3"]}
       />
       <div className="segment_row covid_cont">
         <div className="page_left" ref={ref}>
 
-          <TransitionGroup style={{ width: "100%", height: "100%" }}>
+          <TransitionGroup style={{ maxWidth: "100%", maxHeight: "100%" }}>
             {inView && (
               <CSSTransition timeout={3000} classNames="from-left">
                 <div className="screenshot_root_cov">
-                  <div className="screenshot_container">
                     <img
                       src={covidimg1}
                       alt="appImg1"
                       className="screenshot"
                     />
-                  </div>
-                  <div className="screenshot_container">
                     <img
                       src={covidimg2}
                       alt="appImg2"
                       className="screenshot"
                     />
-                  </div>
                 </div>
               </CSSTransition>
             )}

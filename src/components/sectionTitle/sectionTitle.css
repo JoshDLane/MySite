@@ -1,17 +1,24 @@
 .section_title_cont{
-    padding: 20px 0px;
+    padding: 5% 0px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     margin-top: 5%;
 }
 
-
 .section_title{
     text-align: center;
     font-family: Calibri;
-    font-size: 45px;
+    font-size: 8vh;
     color: #4ABDAC;
 
 }
+
+@media (max-width: 1024px) {
+    .section_title {
+        font-size: 5vh;
+    }
+}
+
+
 

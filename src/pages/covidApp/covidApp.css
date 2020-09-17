@@ -9,15 +9,6 @@
     animation: mymove 5s infinite;
 }
 
-.screenshot{
-    height:95%;
-}
-
-.screenshot_container{
-    margin: 0 5%;
-    height: 100%
-}
-
 .c_line{
     left: 40vw;
 }
@@ -29,20 +20,23 @@
 .screenshot_root_cov{
     display: flex;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: center;
     width: 100%;
     height: 100%;
     align-items: center;
-    padding: 0 15%;
 }
-
+.screenshot{
+    max-width: 45%;
+    max-height: 100%;
+    margin: 0 5%
+}
 
 .emphasized{
     color: white;
 }
-
+/* 
 @media (max-width: 1024px) {
     .screenshot{
         width: 80%;
     }
-}
+} */

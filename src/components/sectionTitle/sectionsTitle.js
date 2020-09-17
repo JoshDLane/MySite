@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./sectionTitle.css";
 import "../../styles/rootstyles.css";
 import { useInView } from "react-intersection-observer";
@@ -12,6 +12,7 @@ const Title = styled.span`
   `;
 
 const SectionTitle = (props) => {
+  const [tools, setTools] = useState([])
   const [titleRef, titleInView] = useInView({
     rootMargin: "-100px 0px -200px 0px",
   });
@@ -19,6 +20,10 @@ const SectionTitle = (props) => {
   const opacitySpring = useSpring({
     opacity: titleInView ? 1 : 0,
   });
+  useEffect(()=>{
+    setTools(props.tools)
+    console.log(props.tools)
+  }, [])
   return (
     <div>
       <animated.div
@@ -30,7 +35,7 @@ const SectionTitle = (props) => {
           {props.title}
         </Title>
       </animated.div>
-      <ToolIcons show={titleInView} tools={props.tools} />
+      <ToolIcons show={titleInView} tools={tools} />
     </div>
   );
 };

@@ -8,10 +8,11 @@
 }
 .body{
     padding: 5;
+    max-height: 80%;
 }
-.bottom_pad{
+/* .bottom_pad{
     padding-bottom: 15px;
-}
+} */
 
 .slide_img_cont {
     display: block;
