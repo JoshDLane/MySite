@@ -5,6 +5,8 @@ import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
 import CheckoutGit from "../../components/checkoutGit/checkoutGit";
+import covidimg1 from "../../images/covidScreenshotLineG.png"
+import covidimg2 from "../../images/covidScreenshotHome.png"
 
 import "./covidApp.css";
 import "../../styles/rootstyles.css";
@@ -27,13 +29,13 @@ const CovidApp = (props) => {
       <div className="screenshot_root_cov">
         <div className="screenshot_container">
           <img
-            src={require("../../images/covidScreenshotHome.png")}
+            src={covidimg1}
             className="screenshot"
           />
         </div>
         <div className="screenshot_container">
           <img
-            src={require("../../images/covidScreenshotLineG.png")}
+            src={covidimg2}
             className="screenshot"
           />
         </div>

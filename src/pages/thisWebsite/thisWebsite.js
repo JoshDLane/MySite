@@ -5,6 +5,7 @@ import { useSpring, animated } from "react-spring";
 import CheckoutGit from "../../components/checkoutGit/checkoutGit";
 import DownArrow from "../../components/downarrow/downarrow";
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
+import compImg from "../../images/testing.png"
 
 import "./thisWebsite.css";
 import "../../styles/rootstyles.css";
@@ -33,7 +34,7 @@ export default function ThisSite() {
         <animated.div ref={ref} style={opacitySpring} className="page_left">
           <div className="siteImage_container">
             <img
-              src={require("../../images/testing.png")}
+              src={compImg}
               className="siteImage"
             />
           </div>

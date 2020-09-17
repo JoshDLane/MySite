@@ -1,10 +1,12 @@
-import React from "react";
+import React, { useEffect } from "react";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
+import pic1 from "../../images/poeAudioScreenshot1.png"
+import pic2 from "../../images/poeAudioScreenshot2.png"
+import pic3 from "../../images/poeAudioScreenshot3.png"
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
-import CheckoutGit from "../../components/checkoutGit/checkoutGit";
 import AppStoreButton from "../../components/appStoreButton/appStoreButton";
 import "../../styles/rootstyles.css";
 import "./poeAudio.css";
@@ -25,17 +27,25 @@ const PoeAudio = (props) => {
   const poePics = [
     {
       name: "primary",
-      img: require("../../images/poeAudioScreenshot1.png"),
+      src: pic1,
     },
     {
       name: "secondary",
-      img: require("../../images/poeAudioScreenshot2.png"),
+      src: pic2,
     },
     {
       name: "tertiary",
-      img: require("../../images/poeAudioScreenshot3.png"),
+      src: pic3,
     },
   ];
+
+  // useEffect(()=>{
+  //   poePics.forEach(({name, src})=>{
+  //     const img = new Image();
+  //     img.src = src;
+  //   })
+  // }, [])
+
   return (
     <section className="section_content sec_background poe_background">
       <SectionTitle
@@ -67,7 +77,7 @@ const PoeAudio = (props) => {
                 >
                   <div className="audio_poem_shots">
                     <img
-                      src={item.img}
+                      src={item.src}
                       alt={item.name}
                       className="screenshot_poe"
                     />
