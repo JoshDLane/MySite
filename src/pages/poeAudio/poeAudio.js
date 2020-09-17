@@ -1,11 +1,11 @@
-import React, { useEffect } from "react";
+import React from "react";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
-import pic1 from "../../images/poeAudioScreenshot1.png"
-import pic2 from "../../images/poeAudioScreenshot2.png"
-import pic3 from "../../images/poeAudioScreenshot3.png"
+import pic1 from "../../images/poeAudioScreenshot1.png";
+import pic2 from "../../images/poeAudioScreenshot2.png";
+import pic3 from "../../images/poeAudioScreenshot3.png";
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
 import AppStoreButton from "../../components/appStoreButton/appStoreButton";
 import "../../styles/rootstyles.css";
@@ -14,11 +14,6 @@ import "./poeAudio.css";
 const PoeAudio = (props) => {
   const [ref, inView] = useInView({
     rootMargin: "-125px 0px -200px 0px",
-  });
-
-  const screenshotSprings = useSpring({
-    transform: inView ? "translate3d(0vw,0,0)" : "translate3d(-10vw,0,0)",
-    opacity: inView ? 1 : 0,
   });
 
   const opacitySpring = useSpring({
@@ -102,7 +97,11 @@ const PoeAudio = (props) => {
             link="https://github.com/JoshDLane/NYSCovidTesting"
             dark={true}
           /> */}
-          <a href="https://apps.apple.com/us/app/poe-audio-poems/id1529015835" target="_blank">
+          <a
+            href="https://apps.apple.com/us/app/poe-audio-poems/id1529015835"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
             <AppStoreButton />
           </a>
         </animated.div>

@@ -20,7 +20,6 @@ export default function MainScroll() {
     useEffect(() => {
         window.addEventListener('scroll', () => {
             const isTop = window.scrollY < 150;
-            const total = window.outerHeight
             if (isTop) {
                 setAtTop(true)
             }

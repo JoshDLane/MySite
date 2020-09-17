@@ -16,32 +16,14 @@ const CovidApp = (props) => {
     rootMargin: "-125px 0px -200px 0px",
   });
 
-  const screenshotSprings = useSpring({
-    transform: inView ? "translate3d(0vw,0,0)" : "translate3d(-10vw,0,0)",
-    opacity: inView ? 1 : 0,
-  });
+  // const screenshotSprings = useSpring({
+  //   transform: inView ? "translate3d(0vw,0,0)" : "translate3d(-10vw,0,0)",
+  //   opacity: inView ? 1 : 0,
+  // });
 
   const opacitySpring = useSpring({
     opacity: inView ? 1 : 0,
   });
-  const myContext = (
-    <div>
-      <div className="screenshot_root_cov">
-        <div className="screenshot_container">
-          <img
-            src={covidimg1}
-            className="screenshot"
-          />
-        </div>
-        <div className="screenshot_container">
-          <img
-            src={covidimg2}
-            className="screenshot"
-          />
-        </div>
-      </div>
-    </div>
-  );
 
   return (
     <section className="section_content sec_background cov_background">
@@ -51,27 +33,22 @@ const CovidApp = (props) => {
       />
       <div className="segment_row covid_cont">
         <div className="page_left" ref={ref}>
-          {/* <Transition
-                items={inView}
-                from={{ opacity: 0, transform: 'translate3d(-10vw,0,0)'}}
-                enter={{ opacity: 1, transform: 'translate3d(0vw,0,0)'}}
-                leave={{ opacity: 0, transform: 'translate3d(-10vw,0,0)'}}
-                config={config.molasses}>
-                {inView => inView && (props => <div style={props}>{myContext}</div>)}
-            </Transition> */}
+
           <TransitionGroup style={{ width: "100%", height: "100%" }}>
             {inView && (
               <CSSTransition timeout={3000} classNames="from-left">
                 <div className="screenshot_root_cov">
                   <div className="screenshot_container">
                     <img
-                      src={require("../../images/covidScreenshotHome.png")}
+                      src={covidimg1}
+                      alt="appImg1"
                       className="screenshot"
                     />
                   </div>
                   <div className="screenshot_container">
                     <img
-                      src={require("../../images/covidScreenshotLineG.png")}
+                      src={covidimg2}
+                      alt="appImg2"
                       className="screenshot"
                     />
                   </div>
@@ -80,14 +57,6 @@ const CovidApp = (props) => {
             )}
           </TransitionGroup>
 
-          {/* <animated.div ref={ref} style={screenshotSprings} className="screenshot_root">
-                            <div className="screenshot_container">
-                                <img src={require("../../images/covidScreenshotHome.png")} className="screenshot" />
-                            </div>
-                            <div className="screenshot_container">
-                                <img src={require("../../images/covidScreenshotLineG.png")} className="screenshot" />
-                            </div>
-                        </animated.div> */}
         </div>
         <animated.div className="page_right" style={opacitySpring}>
           <p className="myfont white paragraph_size">

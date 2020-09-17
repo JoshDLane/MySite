@@ -1,17 +1,15 @@
-import React, {useState} from "react"
+import React from "react"
 import { useSpring, animated } from 'react-spring'
-import textToSVG from 'text-to-svg'
 
 
 function LoadingIcon() {
     const AnimFeTurbulence = animated('feTurbulence')
     const AnimFeDisplacementMap = animated('feDisplacementMap')
-    const[ loadDone, setLoadDone ] = useState(false)
-    const { freq, scale, transform, opacity } = useSpring({
+
+    const { freq, scale } = useSpring({
         from: { scale:5, opacity: 0, transform: 'scale(1)', t:0, freq: '0.0, 0.0' },
         to: { scale: 150, opacity: 1, transform: 'scale(.8)', t:0, freq: '0.035, 0.0',  },
         config: { duration: 8000 },
-        // onRest: () => {setLoadDone(true)}
 
     })
     const {o} = useSpring({

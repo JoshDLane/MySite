@@ -1,13 +1,18 @@
 import React from "react";
+
+import bikeImg from "../../images/bambooBike.jpeg"
+
 import "../../styles/rootstyles.css";
 import "./bikeSlide.css";
+
 function BikeSlide(props) {
   return (
     <div className="slide_cont">
       <div className="page_left">
         <div className="slide_img_cont">
           <img
-            src={require("../../images/bambooBike.jpeg")}
+            src={bikeImg}
+            alt="bikeImg"
           />
         </div>
       </div>

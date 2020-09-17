@@ -1,11 +1,9 @@
 import React, { useState, useEffect } from "react";
-import { useTransition, config } from "react-spring";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import "./toolIcons.css";
 
 export default function ToolIcons(props) {
-  const [items, set] = useState([]);
   const [useTools, setUseTools] = useState([]);
 
   const tools = [
@@ -78,6 +76,7 @@ export default function ToolIcons(props) {
 
   useEffect(() => {
     if (props.tools) {
+        console.log(props.tools)
       setUseTools(props.tools);
     }
   }, [props.tools]);

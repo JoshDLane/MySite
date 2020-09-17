@@ -1,13 +1,18 @@
 import React from "react";
+
+import guitarImg from "../../images/guitar_pic.jpeg"
+
 import "../../styles/rootstyles.css";
 import "./guitarSlide.css";
+
 function GuitarSlide(props) {
   return (
     <div className="slide_cont">
       <div className="page_left">
         <div className="slide_img_cont">
           <img
-            src={require("../../images/guitar_pic.jpeg")}
+            src={guitarImg}
+            alt="guitarImg"
           />
         </div>
       </div>

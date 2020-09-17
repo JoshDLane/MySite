@@ -1,14 +1,18 @@
 import React from "react";
+
 import { useSpring, animated } from "react-spring";
-import "./myintro.css";
-import { bounce } from "react-animations";
-import styled, { keyframes } from "styled-components";
+// import { bounce } from "react-animations";
+// import styled, { keyframes } from "styled-components";
 import DownArrow from "../downarrow/downarrow";
 
+import "./myintro.css";
+
+
 export default function MyIntro(props) {
-  const Bounce = styled.div`
-    animation: 2s ${keyframes`${bounce}`};
-  `;
+
+  // const Bounce = styled.div`
+  //   animation: 2s ${keyframes`${bounce}`};
+  // `;
 
   const opacitySpring = useSpring({
     from: { opacity: 0 },

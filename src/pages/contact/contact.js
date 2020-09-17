@@ -1,4 +1,5 @@
-import React, {Linking} from 'react';
+import React from 'react';
+
 import './contact.css'
 import '../../styles/rootstyles.css'
 

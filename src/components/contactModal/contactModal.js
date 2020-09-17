@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react';
-import useSpring from 'react-spring'
+
 import './contactModal.css'
 
 export default function ContactModal(props) {

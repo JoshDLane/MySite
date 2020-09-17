@@ -1,6 +1,5 @@
 import React from "react";
-import { useInView } from "react-intersection-observer";
-import { useSpring, animated } from "react-spring";
+
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
 import Slider from "../../components/slider/slider";
 

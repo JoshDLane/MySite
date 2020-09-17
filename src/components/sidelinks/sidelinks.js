@@ -5,7 +5,6 @@ import GitIcon from '../../components/gitIcon'
 // import loaderDelay from '../../styles/theme'
 import './sidelinks.css'
 import '../../styles/rootstyles.css'
-import { css } from 'styled-components';
 
 
 export default function SideLinks(props) {

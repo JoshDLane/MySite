@@ -1,7 +1,7 @@
 import React from 'react'
-import { colors } from '../styles/theme'
-import { TweenMax, TimelineMax, Linear } from 'gsap'
+
 import "./logoSVG.css"
+
 export default function LogoSVG() {
 
     return (

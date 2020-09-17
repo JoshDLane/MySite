@@ -35,6 +35,7 @@ export default function ThisSite() {
           <div className="siteImage_container">
             <img
               src={compImg}
+              alt="compImg"
               className="siteImage"
             />
           </div>
