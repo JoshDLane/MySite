@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import GuitarSlide from "../guitarSlide/guitarSlide";
 import BikeSlide from "../bikeSlide/bikeSlide";
+import {isMobile} from 'react-device-detect';
 
 import "./slider.css";
 
@@ -15,9 +16,22 @@ function Slider(props) {
   const goLeft = () => {
     x === 0 ? setX((sliderArr.length - 1) * -100) : setX(x + 100);
   };
+  
   return (
     <div className="slider">
-      {sliderArr.map((item, index) => {
+      {isMobile ? 
+      sliderArr.map((item, index) => {
+        return (
+          <div
+            key={index}
+            className="slide"
+            style={{ transform: `translateY(${x}%)` }}
+          >
+            {item}
+          </div>
+        );
+      }):
+      sliderArr.map((item, index) => {
         return (
           <div
             key={index}
@@ -28,6 +42,17 @@ function Slider(props) {
           </div>
         );
       })}
+      {/* {sliderArr.map((item, index) => {
+        return (
+          <div
+            key={index}
+            className="slide"
+            style={{ transform: `translateX(${x}%)` }}
+          >
+            {item}
+          </div>
+        );
+      })} */}
       <button id="goLeft" className="moveButton" onClick={goLeft}>
         <span id="leftArrow" className="chevron"></span>
       </button>
@@ -35,6 +60,8 @@ function Slider(props) {
         <span id="rightArrow" className="chevron"></span>
       </button>
     </div>
+    
+
   );
 }
 

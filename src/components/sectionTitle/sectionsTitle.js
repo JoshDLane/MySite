@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import "./sectionTitle.css";
 import "../../styles/rootstyles.css";
+
 import { useInView } from "react-intersection-observer";
 import { useSpring, animated } from "react-spring";
 import styled from "styled-components";
@@ -22,7 +23,6 @@ const SectionTitle = (props) => {
   });
   useEffect(()=>{
     setTools(props.tools)
-    console.log(props.tools)
   }, [])
   return (
     <div>

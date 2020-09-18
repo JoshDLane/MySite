@@ -76,7 +76,6 @@ export default function ToolIcons(props) {
 
   useEffect(() => {
     if (props.tools) {
-    console.log(props.tools)
     setUseTools(props.tools);
     }
   }, [props.tools]);

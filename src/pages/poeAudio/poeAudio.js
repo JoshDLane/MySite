@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
 import { CSSTransition, TransitionGroup } from "react-transition-group";
@@ -34,12 +34,12 @@ const PoeAudio = (props) => {
     },
   ];
 
-  // useEffect(()=>{
-  //   poePics.forEach(({name, src})=>{
-  //     const img = new Image();
-  //     img.src = src;
-  //   })
-  // }, [])
+  useEffect(()=>{
+    poePics.forEach(({name, src})=>{
+      const img = new Image();
+      img.src = src;
+    })
+  }, [])
 
   return (
     <section className="section_content sec_background poe_background">
@@ -66,7 +66,10 @@ const PoeAudio = (props) => {
               poePics.map((item, i) => (
                 <CSSTransition
                   key={item.name}
-                  timeout={3000}
+                  timeout={1000}
+                  transitionAppear={true}
+                  transitionAppearTimeout={1000}
+                  transitionTimeout={1000}
                   classNames="fade-in"
                   style={{ transitionDelay: `${inView ? i * 200 : 0}ms` }}
                 >
