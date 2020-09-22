@@ -161,6 +161,15 @@
     transition: 1000ms ease-in;
 }
 
+.fadeout{
+    opacity: 0;
+    transition: 750ms ease-in-out;
+}
+.fadein{
+    opacity: 1;
+    transition: 750ms ease-in-out;
+}
+
 .from-left-enter{
     opacity: 0;
     transform: translateX(-50px);

@@ -4,7 +4,14 @@
         max-height: 100%;
         margin: 0 1%;
         border-radius: 20px;
-    
+}
+.hidepoe{
+    opacity: 0;
+    transition: 750s ease-in-out;
+}
+.revealpoe{
+    opacity: 0;
+    transition: 750s ease-in-out;
 }
 .slide_img_cont {
     display: block;
@@ -32,12 +39,7 @@
     height: 100%;
     align-items: center;
 }
+
 .poe_background{
     background-color: #dbebfa;
 }
-
-/* @media (max-width: 1024px) {
-    .screenshot_poe{
-        width: 80%;
-    }
-} */

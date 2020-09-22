@@ -8,6 +8,7 @@ import pic2 from "../../images/poeAudioScreenshot2.png";
 import pic3 from "../../images/poeAudioScreenshot3.png";
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
 import AppStoreButton from "../../components/appStoreButton/appStoreButton";
+
 import "../../styles/rootstyles.css";
 import "./poeAudio.css";
 
@@ -61,7 +62,17 @@ const PoeAudio = (props) => {
                                 <img src={require("../../images/poeAudioScreenshot3.png")} className="screenshot_poe" />
                             </div>
                         </animated.span> */}
-          <TransitionGroup className="screenshot_root_poe">
+            <div className="screenshot_root_poe">
+              {poePics.map((item, i) => (
+                    <img
+                      src={item.src}
+                      alt={item.name}
+                      className={`screenshot_poe fadeout ${inView && "fadein"}`}
+                      style={{ transitionDelay: `${inView ? i * 150 : 0}ms` }}
+                      />
+              ))}
+          </div>
+          {/* <TransitionGroup className="screenshot_root_poe">
             {inView &&
               poePics.map((item, i) => (
                 <CSSTransition
@@ -80,7 +91,7 @@ const PoeAudio = (props) => {
                     />
                 </CSSTransition>
               ))}
-          </TransitionGroup>
+          </TransitionGroup> */}
         </div>
         <animated.div className="page_right" style={opacitySpring}>
           <p className="myfont paragraph_size">

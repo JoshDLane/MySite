@@ -34,11 +34,7 @@ const CovidApp = (props) => {
       />
       <div className="segment_row covid_cont">
         <div className="page_left" ref={ref}>
-
-          <TransitionGroup style={{ width: "100%", height: "100%" }}>
-            {inView && (
-              <CSSTransition timeout={3000} classNames="from-left">
-                <div className="screenshot_root_cov">
+                <div className={`screenshot_root_cov ${inView && "reveal"}`}>
                     <img
                       src={covidimg1}
                       alt="appImg1"
@@ -50,9 +46,6 @@ const CovidApp = (props) => {
                       className="screenshot"
                     />
                 </div>
-              </CSSTransition>
-            )}
-          </TransitionGroup>
 
         </div>
         <animated.div className="page_right" style={opacitySpring}>
