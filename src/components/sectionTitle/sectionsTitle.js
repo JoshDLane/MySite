@@ -15,7 +15,7 @@ const Title = styled.span`
 const SectionTitle = (props) => {
   const [tools, setTools] = useState([])
   const [titleRef, titleInView] = useInView({
-    rootMargin: "-100px 0px -200px 0px",
+    rootMargin: "-50px 0px -200px 0px",
   });
 
   const opacitySpring = useSpring({

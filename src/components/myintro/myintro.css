@@ -20,6 +20,15 @@
     font-size: calc(7vw);
     line-height: 1;
 }
+.qualities{
+    display: flex;
+    flex-direction: row;
+    margin: 0px 0px 15px 0px
+}
+
+.qualities span{
+    margin: 5px 10px 0px 0px
+}
 
 .intro{
     line-height: 1;
@@ -28,7 +37,9 @@
 .largeSub{
     font-size: calc(4vw);
 }
-
+.prof{
+    font-size: calc(3vw);
+}
 .intro_container{
     position: absolute;
     left: 15%;
@@ -43,7 +54,17 @@
 
 @media (max-width: 1024px) {
     .name_size{
-        font-size: calc(7vw);
+        font-size: calc(13vw);
     }
+    .qualities{
+        flex-direction: column;
+    }
+    .qualities span{
+        font-size: calc(8vw);
+    }
+    .prof{
+        font-size: calc(6vw);
+    }
+
 }
 

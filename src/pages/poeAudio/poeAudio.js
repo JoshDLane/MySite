@@ -51,17 +51,6 @@ const PoeAudio = (props) => {
       />
       <div className="segment_row covid_cont">
         <div className="page_left" ref={ref}>
-          {/* <animated.span ref={ref} style={screenshotSprings} className="screenshot_root_poe">
-                            <div className="audio_poem_shots">
-                                <img src={require("../../images/poeAudioScreenshot1.png")} className="screenshot_poe" />
-                            </div>
-                            <div className="audio_poem_shots">
-                                <img src={require("../../images/poeAudioScreenshot2.png")} className="screenshot_poe" />
-                            </div>
-                            <div className="audio_poem_shots">
-                                <img src={require("../../images/poeAudioScreenshot3.png")} className="screenshot_poe" />
-                            </div>
-                        </animated.span> */}
             <div className="screenshot_root_poe">
               {poePics.map((item, i) => (
                     <img

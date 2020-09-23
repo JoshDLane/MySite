@@ -4,6 +4,7 @@ import { useSpring, animated } from "react-spring";
 // import { bounce } from "react-animations";
 // import styled, { keyframes } from "styled-components";
 import DownArrow from "../downarrow/downarrow";
+import {isMobile} from 'react-device-detect';
 
 import "./myintro.css";
 
@@ -37,10 +38,13 @@ export default function MyIntro(props) {
 
           {/* <p className="white myfont subtitle intro">Constantly learning while creating</p> */}
           <div className="grey intro">
-            <p className="myfont largeSub">
-              Creator. Problem Solver. Outcome Driven.
-            </p>
-            <p className="myfont subtitle">
+             <div className="myfont largeSub qualities">
+             <span>Creator.</span>
+              <span>Problem Solver.</span>
+              <span>Outcome Driven.</span>
+            </div>
+
+            <p className="myfont prof">
               Data Scientist by profession
             </p>
           </div>

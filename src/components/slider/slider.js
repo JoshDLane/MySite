@@ -19,7 +19,7 @@ function Slider(props) {
   
   return (
     <div className="slider">
-      {isMobile ? 
+      {/* {isMobile ? 
       sliderArr.map((item, index) => {
         return (
           <div
@@ -30,8 +30,8 @@ function Slider(props) {
             {item}
           </div>
         );
-      }):
-      sliderArr.map((item, index) => {
+      }): */}
+      {sliderArr.map((item, index) => {
         return (
           <div
             key={index}
