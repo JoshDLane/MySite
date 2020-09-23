@@ -32,9 +32,9 @@
     border: none;
     outline: none;
 }
-.moveButton:hover .moveButton:active{
-    background: rgba(0, 0, 0, 0.418);
-    box-shadow: 0px 0px 35px 10px rgba(0,0,0,0.75);    transition: 0.75s
+.moveButton:hover {
+    background: rgba(0, 0, 0, 0.318);
+    box-shadow: 0px 0px 35px 10px rgba(0,0,0,0.45);    transition: 0.75s
 }
 #goRight {
     right: 0;
@@ -85,7 +85,10 @@
     .slider{
         width: 90vw;
     }
-
+    .moveButton:hover {
+        background: none;
+        box-shadow: none;
+    }
     .slide{
         height: 50vh;
         margin: 10vh 0;
