@@ -18,7 +18,7 @@ function GuitarSlide(props) {
       </div>
       <div className="page_right">
         <span className="myfont white paragraph_size">Electric Guitar -</span>
-        <p className="myfont white paragraph_size main_txt">
+        <p className="myfont white paragraph_size">
           It was the summer I spent building this guitar that I realized the joy
           I get from taking on big projects
         </p>

@@ -5,7 +5,7 @@ export default function DownArrow(props) {
     return (
         <div className={`point_down_container ${props.show ? '' : 'fadeOut'}`}>
             <div className="scroll_down_title">
-                <p className="myfont scrolldown">
+                <p className="myfont scrolldown paragraph_size">
                     {props.title}
                     </p>
             </div>

@@ -7,7 +7,6 @@ import SectionTitle from "../../components/sectionTitle/sectionsTitle";
 import CheckoutGit from "../../components/checkoutGit/checkoutGit";
 import covidimg1 from "../../images/covidScreenshotLineG.png"
 import covidimg2 from "../../images/covidScreenshotHome.png"
-import { Textfit } from 'react-textfit';
 
 import "./covidApp.css";
 import "../../styles/rootstyles.css";
@@ -49,14 +48,14 @@ const CovidApp = (props) => {
 
         </div>
         <animated.div className="page_right" style={opacitySpring}>
-          <Textfit mode="multi" className="myfont white content_text">
+          <p className="myfont white content_text paragraph_size">
             Integrated an API offered by the New York State Department of Health
             to provide up to date testing data on the county level
-          </Textfit>
-          <Textfit mode="multi" className="myfont white content_text">
+          </p >
+          <p className="myfont white content_text paragraph_size">
             Utilized D3 to geomap the data and create interactive time series
             charts
-          </Textfit>
+          </p>
           <CheckoutGit
             link="https://github.com/JoshDLane/NYSCovidTesting"
             color="white"

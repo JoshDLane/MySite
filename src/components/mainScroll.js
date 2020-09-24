@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import Home from '../pages/home/home'
 import CovidApp from '../pages/covidApp/covidApp'
 import Contact from '../pages/contact/contact'
-import ThisWebsite from '../pages/thisWebsite/thisWebsite'
+import ThisSite from '../pages/thisSite/thisSite'
 import TopLogo from './topLogo/topLogo'
 import Navbar from './navbar/navbar'
 import ContactModal from './contactModal/contactModal'
@@ -49,7 +49,7 @@ export default function MainScroll() {
                     <Home top={atTop} />
                     <CovidApp />
                     <PoeAudio />
-                    <ThisWebsite />
+                    <ThisSite />
                     <Guitar/>
                     <Contact id={'contact'} />
                 </div>

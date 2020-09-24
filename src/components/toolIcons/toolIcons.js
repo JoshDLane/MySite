@@ -88,6 +88,7 @@ export default function ToolIcons(props) {
             key={item.name}
             timeout={3000}
             classNames="fade-up"
+            appear
             style={{ transitionDelay: `${props.show ? i * 100 : 0}ms` }}
           >
             <div className="tool_img">

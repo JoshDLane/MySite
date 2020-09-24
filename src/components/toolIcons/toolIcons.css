@@ -25,11 +25,11 @@
     margin: 0 2%;
 }
 
-.fade-up-enter{
+.fade-up-enter, .fade-up-appear {
     opacity: 0;
     transform: translateY(50px);
 }
-.fade-up-enter-active{
+.fade-up-enter-active, .fade-up-appear-active{
     opacity: 1;
     transform: translateY(0px);
     transition: 500ms ease-in-out;

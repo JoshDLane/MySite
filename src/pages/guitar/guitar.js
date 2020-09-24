@@ -18,8 +18,9 @@ const Guitar = () => {
   return (
     <section className="section_content sec_background guitar_background">
       <SectionTitle
-        title="My more physical projects..."
+        title="My more physical projects"
         tools={["Wood", "Drawing"]}
+        color="white"
       />
       <div className="segment_row">
         <Slider/>
