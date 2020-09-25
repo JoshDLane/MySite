@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useInView } from "react-intersection-observer";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
+import CheckoutGit from "../../components/checkoutGit/checkoutGit";
 
 import compImg from "../../images/macdisplay.png";
 import SectionTitle from "../../components/sectionTitle/sectionsTitle";
@@ -31,6 +31,10 @@ const ThisSite = (props) => {
             I use this website as a platform for me to continue growing my web
             development skills using React, Javascript & CSS
           </p>
+          <CheckoutGit
+            link="https://github.com/JoshDLane/MySite"
+            color="white"
+          />
         </div>
       </div>
     </section>

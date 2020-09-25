@@ -1,7 +1,6 @@
 import React, {useEffect} from "react";
 import { useSpring, animated } from "react-spring";
 import { useInView } from "react-intersection-observer";
-import { CSSTransition, TransitionGroup } from "react-transition-group";
 
 import pic1 from "../../images/poeAudioScreenshot1.png";
 import pic2 from "../../images/poeAudioScreenshot2.png";
