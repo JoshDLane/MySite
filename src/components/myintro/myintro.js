@@ -45,7 +45,7 @@ export default function MyIntro(props) {
             </div>
 
             <p className="myfont paragraph_size">
-              `{'Genomics -> Data Science -> Full Stack Dev'}`
+              Genomics | Data Science | Full Stack Dev
             </p>
           </div>
 
